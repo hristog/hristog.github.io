@@ -30,8 +30,6 @@
   {?site.enable_analytics}
   <script type="text/javascript">
       var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-63522904-1']);
-        _gaq.push(['_trackPageview']);
         {?site.analytics_code}
         _gaq.push(['user._setAccount', '{site.analytics_code}']);
         _gaq.push(['user._trackPageview']);
