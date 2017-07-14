@@ -29,6 +29,6 @@ prod:
   canonical_base_path: /
   remote_host: hristog.github.io
   remote_user: hristog
-  remote_path: /site
+  remote_path: /
   # rsync_cmd: rsync
   # rsync_flags: avzPk
