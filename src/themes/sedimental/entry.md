@@ -15,7 +15,7 @@ manual whitespace insertion. Use {~n} for newlines and {~s} for spaces.!}
 {/eq}
 {/attrs}
 {#links}
-   * {#value}[{title}]({href}{?tip} "{tip}"{/tip}){/value}
+   * {#value}[{title}]({:target="_blank"}{href}{?tip} "{tip}"{/tip}){/value}
       {! TODO: tip quote escaping !}
 {@sep}{~n}{/sep}
 {/links}

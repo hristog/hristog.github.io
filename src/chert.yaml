@@ -6,8 +6,6 @@ site:
   copyright: >-
     &copy; 2017 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img height="14" src="/img/by-sa.png" /></a>
   primary_links:
-    - text: About
-      href: /about.html
     - text: Github
       href: https://github.com/hristog
       desc: Github account
