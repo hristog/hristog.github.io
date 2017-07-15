@@ -53,22 +53,17 @@ for the purposes and scope of this study.
 # Visualizations
 ## Number of lines
 ### All characters
-![number of lines for all characters][num_lines_all_chars]
+[![Number of lines for all characters(https://hristog.github.io/uploads/Friends_num_lines_all.png)](https://hristog.github.io/uploads/Friends_num_lines_all_120x206.png)
 
 ### Focus on supporting characters
-![number of lines with focus on supporting characters][num_lines_supp_chars]
+[![Number of lines with focus on supporting characters(https://hristog.github.io/uploads/Friends_num_lines_supp.png)](https://hristog.github.io/uploads/Friends_num_lines_supp_120x206.png)
 
 ## Total line length
 ### All characters
-![total line length for all characters][line_length_all_chars]
+[![Total line length for all characters(https://hristog.github.io/uploads/Friends_num_lines_all.png)](https://hristog.github.io/uploads/Friends_num_lines_all_120x206.png)
 
 ### Focus on supporting characters
-![total line length with focus on supporting characters][line_length_supp_chars]
-
-[num_lines_all_chars]: https://hristog.github.io/uploads/Friends_num_lines_all.png "Number of lines for all characters"
-[num_lines_supp_chars]: https://hristog.github.io/uploads/Friends_num_lines_supp.png "Number of lines with focus on supporting characters"
-[line_length_all_chars]: https://hristog.github.io/uploads/Friends_line_length_all.png "Total line length for all characters"
-[line_length_supp_chars]: https://hristog.github.io/uploads/Friends_line_length_supp.png "Total line length with focus on supporting characters"
+[![Total line length with focus on supporting characters(https://hristog.github.io/uploads/Friends_line_length_supp.png)](https://hristog.github.io/uploads/Friends_line_length_supp_120x206.png)
 
 # Discussion
 TODO
