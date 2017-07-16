@@ -4,7 +4,7 @@ study on a dataset which I'd recently collected. It consists, namely, of
 transcripts of all episodes from all seasons of one of my favorite TV series,
 [Friends][friends_wiki].
 
-![Friends TV Series](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/799px-Friends_logo.svg.png "Friends TV Series")
+![Friends TV Series](/uploads/friends_logo.png "Friends TV Series")
 
 # Dataset
 The aforementioned dataset, consists of transcripts, spread across
@@ -41,11 +41,11 @@ for the purposes and scope of this study.
 
 # Visualizations
 <div class="img-box">
-<a href="https://hristog.github.io/uploads/Friends_num_lines_all.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_all_150x256.png" alt="Number of lines for all characters"></a>
-<a href="https://hristog.github.io/uploads/Friends_num_lines_all_s5on.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_all_s5on_144x256.png" alt="Number of lines for all characters"></a>
-<a href="https://hristog.github.io/uploads/Friends_num_lines_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_supp_148x256.png" alt="Number of lines with focus on supporting characters"></a>
-<a href="https://hristog.github.io/uploads/Friends_line_length_all.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_line_length_all_150x256.png" alt="Total line length for all characters"></a>
-<a href="https://hristog.github.io/uploads/Friends_line_length_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_line_length_supp_148x256.png" alt="Total line length with focus on supporting characters"></a>
+<a href="/uploads/Friends_num_lines_all.png" target="_blank"><img src="/uploads/Friends_num_lines_all_150x256.png" alt="Number of lines for all characters"></a>
+<a href="/uploads/Friends_num_lines_all_s5on.png" target="_blank"><img src="/uploads/Friends_num_lines_all_s5on_144x256.png" alt="Number of lines for all characters"></a>
+<a href="/uploads/Friends_num_lines_supp.png" target="_blank"><img src="/uploads/Friends_num_lines_supp_148x256.png" alt="Number of lines with focus on supporting characters"></a>
+<a href="/uploads/Friends_line_length_all.png" target="_blank"><img src="/uploads/Friends_line_length_all_150x256.png" alt="Total line length for all characters"></a>
+<a href="/uploads/Friends_line_length_supp.png" target="_blank"><img src="/uploads/Friends_line_length_supp_148x256.png" alt="Total line length with focus on supporting characters"></a>
 </div>
 
 We can clearly observe well-formed[^pair_formation] pairs of characters[^char_pairs], by as early as the end of the fourth season: [Ross and Rachel][ross_rachel], [Monica and Chandler][monica_chandler], and [Joey][joey] and [Phoebe][phoebe]; the total line length graphs reveal a further pair, formed by [Joey and Chandler][joey_chandler][^jman_channie], which is not clear enough given only the context of the screen-time
