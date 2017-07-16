@@ -41,7 +41,7 @@ for the purposes and scope of this study.
 <div class="img-box">
 <a href="https://hristog.github.io/uploads/Friends_num_lines_all.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_all_150x256.png" alt="Number of lines for all characters"></a>
 <a href="https://hristog.github.io/uploads/Friends_num_lines_all_s5on.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_all_s5on_144x256.png" alt="Number of lines for all characters"></a>
-<a href="https://hristog.github.io/uploads/Friends_num_lines_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_supp_148x256" alt="Number of lines with focus on supporting characters"></a>
+<a href="https://hristog.github.io/uploads/Friends_num_lines_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_num_lines_supp_148x256.png" alt="Number of lines with focus on supporting characters"></a>
 <a href="https://hristog.github.io/uploads/Friends_line_length_all.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_line_length_all_150x256.png" alt="Total line length for all characters"></a>
 <a href="https://hristog.github.io/uploads/Friends_line_length_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_line_length_supp_148x256.png" alt="Total line length with focus on supporting characters"></a>
 </div>
