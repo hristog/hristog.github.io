@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/friends/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/friends/atom.xml" />
-  <updated>2017-07-16T11:49:28Z</updated>
+  <updated>2017-07-16T12:10:17Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -29,6 +29,7 @@
 study on a dataset which I'd recently collected. It consists, namely, of
 transcripts of all episodes from all seasons of one of my favorite TV series,
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Friends&quot;&gt;Friends&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/799px-Friends_logo.svg.png&quot; alt=&quot;Friends TV Series&quot; title=&quot;Friends TV Series&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dataset&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#dataset&quot;&gt;Dataset&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The aforementioned dataset, consists of transcripts, spread across
 a nested structure of seasons&lt;sup id=&quot;fnref:s2_formatting&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:s2_formatting&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, episodes, and scenes. Each scene, naturally,
@@ -55,7 +56,7 @@ for the purposes and scope of this study.&lt;/p&gt;
 &lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/Friends_line_length_all.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/Friends_line_length_all_150x256.png&quot; alt=&quot;Total line length for all characters&quot; /&gt;&lt;/a&gt;
 &lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/Friends_line_length_supp.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/Friends_line_length_supp_148x256.png&quot; alt=&quot;Total line length with focus on supporting characters&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;We can clearly observe well formed&lt;sup id=&quot;fnref:pair_formation&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:pair_formation&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; pairs of characters&lt;sup id=&quot;fnref:char_pairs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:char_pairs&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, by as early as the end of the fourth season: &lt;a href=&quot;http://friends.wikia.com/wiki/Ross_and_Rachel&quot;&gt;Ross and Rachel&lt;/a&gt;, &lt;a href=&quot;http://friends.wikia.com/wiki/Monica_and_Chandler&quot;&gt;Monica and Chandler&lt;/a&gt;, and Joey and Phoebe; the total line length graphs reveal a further pair, formed by &lt;a href=&quot;http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment&quot;&gt;Joey and Chandler&lt;/a&gt;&lt;sup id=&quot;fnref:jman_channie&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:jman_channie&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, which is not clear enough given only the context of the screen-time
+&lt;p&gt;We can clearly observe well-formed&lt;sup id=&quot;fnref:pair_formation&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:pair_formation&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; pairs of characters&lt;sup id=&quot;fnref:char_pairs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:char_pairs&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, by as early as the end of the fourth season: &lt;a href=&quot;http://friends.wikia.com/wiki/Ross_and_Rachel&quot;&gt;Ross and Rachel&lt;/a&gt;, &lt;a href=&quot;http://friends.wikia.com/wiki/Monica_and_Chandler&quot;&gt;Monica and Chandler&lt;/a&gt;, and &lt;a href=&quot;http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.&quot;&gt;Joey&lt;/a&gt; and &lt;a href=&quot;http://friends.wikia.com/wiki/Phoebe_Buffay&quot;&gt;Phoebe&lt;/a&gt;; the total line length graphs reveal a further pair, formed by &lt;a href=&quot;http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment&quot;&gt;Joey and Chandler&lt;/a&gt;&lt;sup id=&quot;fnref:jman_channie&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:jman_channie&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, which is not clear enough given only the context of the screen-time
 analysis, though.&lt;/p&gt;
 &lt;p&gt;Since the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_5_.281999.E2.80.9300.29&quot;&gt;beginning of the fifth season&lt;/a&gt;, however, when a significant
 event takes place in the personal life of one of the leading cast members, we see a
@@ -68,7 +69,7 @@ season eight screen time, alloted to Chandler (portrayed by the wonderful Matthe
 addiction (and, reportedly, entered rehab near the end of the
 &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_7_.282000.E2.80.9301.29&quot;&gt;seventh season&lt;/a&gt;).&lt;/p&gt;
 &lt;h2 id=&quot;source_code&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#source_code&quot;&gt;Source code&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The plan is to eventually release my Jupyter Notebook and source code (once I bring them to a neat enough implementation state), used for performing the
+&lt;p&gt;The plan is to eventually release my &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter Notebook&lt;/a&gt; and source code (once I bring them to a neat enough implementation state), used for performing the
 analysis, on &lt;a href=&quot;https://github.com/hristog&quot;&gt;GitHub&lt;/a&gt;, write an accompanying blog post here to
 support the various implementation-design decisions, and provide minimally sufficient background for the employed technologies.&lt;/p&gt;
 &lt;div class=&quot;footnote&quot;&gt;
@@ -95,8 +96,7 @@ the quintessentially fluent nature of interactions taking place within the conte
 of a sitcom environment. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:pair_formation&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:char_pairs&quot;&gt;
-&lt;p&gt;Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of
-ranking, based on character importance, corresponding the particular period of
+&lt;p&gt;Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of ranking, based on character importance or reputation, corresponding the particular period of
 the timeline of the TV series. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 4 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:char_pairs&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:jman_channie&quot;&gt;

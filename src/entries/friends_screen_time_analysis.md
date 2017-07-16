@@ -16,6 +16,8 @@ study on a dataset which I'd recently collected. It consists, namely, of
 transcripts of all episodes from all seasons of one of my favorite TV series,
 [Friends][friends_wiki].
 
+![Friends TV Series](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Friends_logo.svg/799px-Friends_logo.svg.png "Friends TV Series")
+
 # Dataset
 The aforementioned dataset, consists of transcripts, spread across
 a nested structure of seasons[^s2_formatting], episodes, and scenes. Each scene, naturally,
@@ -58,7 +60,7 @@ for the purposes and scope of this study.
 <a href="https://hristog.github.io/uploads/Friends_line_length_supp.png" target="_blank"><img src="https://hristog.github.io/uploads/Friends_line_length_supp_148x256.png" alt="Total line length with focus on supporting characters"></a>
 </div>
 
-We can clearly observe well formed[^pair_formation] pairs of characters[^char_pairs], by as early as the end of the fourth season: [Ross and Rachel][ross_rachel], [Monica and Chandler][monica_chandler], and Joey and Phoebe; the total line length graphs reveal a further pair, formed by [Joey and Chandler][joey_chandler][^jman_channie], which is not clear enough given only the context of the screen-time
+We can clearly observe well-formed[^pair_formation] pairs of characters[^char_pairs], by as early as the end of the fourth season: [Ross and Rachel][ross_rachel], [Monica and Chandler][monica_chandler], and [Joey][joey] and [Phoebe][phoebe]; the total line length graphs reveal a further pair, formed by [Joey and Chandler][joey_chandler][^jman_channie], which is not clear enough given only the context of the screen-time
 analysis, though.
 
 Since the [beginning of the fifth season][s05_start], however, when a significant
@@ -77,8 +79,7 @@ addiction (and, reportedly, entered rehab near the end of the
 [^pair_formation]: The notion of a pair here, however, is relatively vague, given
 the quintessentially fluent nature of interactions taking place within the context
 of a sitcom environment.
-[^char_pairs]: Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of
-ranking, based on character importance, corresponding the particular period of
+[^char_pairs]: Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of ranking, based on character importance or reputation, corresponding the particular period of
 the timeline of the TV series.
 [^jman_channie]: At this point, the average die-hard fan of the show is probably reminded of quintessential moments like Joey's _"No more J-man and Channie's"_
 [line][jman_channie], after Chandler informed Joey he'd been moving out to live together with Monica.
@@ -93,7 +94,7 @@ that might have contributed to her amazing success, for that matter).
 the cousin statistic, total line length.
 
 # Source code
-The plan is to eventually release my Jupyter Notebook and source code (once I bring them to a neat enough implementation state), used for performing the
+The plan is to eventually release my [Jupyter Notebook][jupyter_notebook] and source code (once I bring them to a neat enough implementation state), used for performing the
 analysis, on [GitHub][github_account], write an accompanying blog post here to
 support the various implementation-design decisions, and provide minimally sufficient background for the employed technologies.
 
@@ -102,6 +103,8 @@ support the various implementation-design decisions, and provide minimally suffi
 [ja_relationships]: https://en.wikipedia.org/wiki/Jennifer_Aniston#Relationships
 [matthew_perry]: https://en.wikipedia.org/wiki/Matthew_Perry#Personal_life
 [joey_chandler]: http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment
+[joey]: http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.
+[phoebe]: http://friends.wikia.com/wiki/Phoebe_Buffay
 [monica_chandler]: http://friends.wikia.com/wiki/Monica_and_Chandler
 [ross_rachel]: http://friends.wikia.com/wiki/Ross_and_Rachel
 [friends_relationships]: http://friends.wikia.com/wiki/Relationships
@@ -110,4 +113,5 @@ support the various implementation-design decisions, and provide minimally suffi
 [s06_end]: https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_6_.281999.E2.80.9300.29
 [s07_end]: https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_7_.282000.E2.80.9301.29
 [bradpitt_cast]: http://friends.wikia.com/wiki/The_One_With_The_Rumor
+[jupyter_notebook]: https://jupyter.org/
 [github_account]: https://github.com/hristog
