@@ -13,8 +13,10 @@
     </header>
       {entry.content_html|s}
   </div>
-  <div class="twelve columns metadata-div">
-    <a href="/{entry_root}{site.export_html_ext}" title="{publish_timestamp_local}" class="post-timestamp">{headers.publish_date}</a>
+  <div class="twelve columns metadata metadata-div">
+    <a href="/{entry_root}{site.export_html_ext}" title="{publish_timestamp_local}" class="date post-timestamp">{headers.publish_date}</a>
+  </div>
+  <div class="twelve columns metadata metadata-div">
     {?headers.tags}
     <span class="tags">
       {#headers.tags}<a href="/tagged/{.}">#{.}</a> {/headers.tags}
