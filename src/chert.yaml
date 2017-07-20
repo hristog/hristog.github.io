@@ -6,13 +6,9 @@ site:
   copyright: >-
     &copy; 2017 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img height="14" src="/img/by-sa.png" /></a>
 
-  #Currently represented statically via SVG images.
-  #primary_links:
-    #- text: Github
-    #  href: https://github.com/hristog
-    #  desc: Github account
-    #- text: Twitter
-    #  href: https://twitter.com/hristogeo
+  primary_links:
+    - text: About
+      href: /about.html
   analytics_code: UA-102558598-1
 
 theme:
