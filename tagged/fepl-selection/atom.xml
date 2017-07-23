@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" version="2.0">
-    <channel>
-      <title>Conscious Automaton - football</title>
-      <link>https://hristog.github.io/tagged/football/</link>
-      <description>&gt;&gt;&gt; from hristog.thoughts import random</description>
-      <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
-      <language>en</language>
-      <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-07-23T19:41:14Z</lastBuildDate>  <!-- TODO: date format -->
-      <ttl>60</ttl>
-      <sy:updatePeriod>hourly</sy:updatePeriod>
-      <sy:updateFrequency>1</sy:updateFrequency>
-      <!--
-          <image>
-            <title></title>
-            <url></url>
-            <link></link>
-          </image>
-      -->
-      
-      <item>
-        <title>Fantasy Football Total Points Contributions for Season 2016/2017</title>
-        <pubDate>2017-07-22T23:00:00Z</pubDate>
-        <guid isPermaLink="false">https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html</guid>
-        <link>https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html</link>
-        <description>
-          &lt;p&gt;&lt;h2 id=&quot;fantasy_football&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fantasy_football&quot;&gt;Fantasy Football&lt;/a&gt;&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en">
+  <id>https://hristog.github.io/tagged/fepl-selection/</id>
+  <title type="text">Conscious Automaton - fepl-selection</title>
+  <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
+  <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/fepl-selection/" />
+  <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/fepl-selection/atom.xml" />
+  <updated>2017-07-23T19:41:14Z</updated>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <rights type="html">&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</rights>
+  <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>
+  
+  <entry>
+    <id>https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html</id>
+    <author>
+      <name>Hristo</name>
+      <uri>https://hristog.github.io/</uri>
+    </author>
+    <title>Fantasy Football Total Points Contributions for Season 2016/2017</title>
+    <link rel="alternate" type="text/html" href="https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html" />
+    <published>2017-07-22T23:00:00Z</published>
+    <updated>2017-07-22T23:00:00Z</updated>
+    <category term="fantasy-football"/><category term="football"/><category term="fepl"/><category term="fepl-selection"/><category term="analysis"/>
+    
+
+    <content type="html">&lt;p&gt;&lt;h2 id=&quot;fantasy_football&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fantasy_football&quot;&gt;Fantasy Football&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;the_underlying_idea&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#the_underlying_idea&quot;&gt;The Underlying Idea&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;From &lt;a href=&quot;https://en.wikipedia.org/wiki/Fantasy_football_(Association)&quot;&gt;Wikipedia&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -80,16 +80,8 @@ elaborate nature of modern football strategies and formations, where individual 
 
 &lt;hr /&gt;
 
+</content>
 
-        </description>
-
-        <category>fantasy-football</category>
-        <category>football</category>
-        <category>fepl</category>
-        <category>fepl-selection</category>
-        <category>analysis</category>
-        
-      </item>
-      
-    </channel>
-</rss>
+  </entry>
+  
+</feed>

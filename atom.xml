@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/atom.xml" />
-  <updated>2017-07-23T19:28:52Z</updated>
+  <updated>2017-07-23T19:41:14Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -22,7 +22,7 @@
     <link rel="alternate" type="text/html" href="https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html" />
     <published>2017-07-22T23:00:00Z</published>
     <updated>2017-07-22T23:00:00Z</updated>
-    <category term="fantasy-football"/><category term="football"/><category term="fepl"/><category term="analysis"/>
+    <category term="fantasy-football"/><category term="football"/><category term="fepl"/><category term="fepl-selection"/><category term="analysis"/>
     
 
     <content type="html">&lt;p&gt;&lt;h2 id=&quot;fantasy_football&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fantasy_football&quot;&gt;Fantasy Football&lt;/a&gt;&lt;/h2&gt;
@@ -33,11 +33,11 @@
 &lt;/blockquote&gt;
 &lt;p&gt;In other words, football aficionados make selections - subject to a pre-defined set of constraints (e.g., maximum number of players per team etc.) - which are a form of encoded predictions of how well a subset of the entire player pool will perform. Fantasy football managers usually enhance the selection process by following news outlets, and by performing statistical analyses of various degrees of complexity.&lt;/p&gt;
 &lt;h3 id=&quot;the_fantasy_premier_league&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#the_fantasy_premier_league&quot;&gt;The Fantasy Premier League&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;There's an entire &lt;a href=&quot;https://hristog.github.io/fepl.html&quot;&gt;section&lt;/a&gt; on this blog, dedicated to the &lt;a href=&quot;https://fantasy.premierleague.com/&quot;&gt;Fantasy Premier League&lt;/a&gt;, and predominantly targeting the portion of fantasy managers, who are interested in supplementing their knowledge and insights by delving into statistically-supported articles.&lt;/p&gt;
-&lt;p&gt;In a series of posts, I'll attempt to help you improve your selection, or even create an initial one, based on statistical analysis or relatively simple heuristics. If you haven't created an account yet, it's probably a good idea to head over to the Fantasy Premier League's registration &lt;a href=&quot;https://users.premierleague.com/a/profile/register&quot;&gt;page&lt;/a&gt; and become a fantasy manager before the official start of the &lt;a href=&quot;https://www.premierleague.com/fixtures&quot;&gt;season&lt;/a&gt; (which is in the second week of August).&lt;/p&gt;
+&lt;p&gt;There's an entire &lt;a href=&quot;https://hristog.github.io/tagged/fantasy-football&quot;&gt;section&lt;/a&gt; on this blog, dedicated to analysis of fantasy football competitions, and predominantly targeting the portion of fantasy managers, who are interested in supplementing their knowledge and insights by delving into statistically-supported articles.&lt;/p&gt;
+&lt;p&gt;In a &lt;a href=&quot;https://hristog.github.io/tagged/fepl-selection&quot;&gt;series&lt;/a&gt; of posts, focused on the &lt;a href=&quot;https://fantasy.premierleague.com/&quot;&gt;Fantasy Premier League&lt;/a&gt;, I'll attempt to assist you in improving selection (or verifying that it's already perfectly-polished!), or even create an initial one, based on statistical analysis or relatively simple heuristics. If you haven't created an account yet, it's probably a good idea to head over to the Fantasy Premier League's registration &lt;a href=&quot;https://users.premierleague.com/a/profile/register&quot;&gt;page&lt;/a&gt; and become a fantasy manager before the official start of the &lt;a href=&quot;https://www.premierleague.com/fixtures&quot;&gt;season&lt;/a&gt; (which is in the second week of August).&lt;/p&gt;
 &lt;h2 id=&quot;fantasy_season_2017_2018&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fantasy_season_2017_2018&quot;&gt;Fantasy Season 2017/2018&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;player_selection&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#player_selection&quot;&gt;Player Selection&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;The game organizers have conveniently provided a printable single-page &lt;a href=&quot;https://fantasy.premierleague.com/player-list/&quot;&gt;reference&lt;/a&gt; to the last season's performance (in terms of total number of points only, however) of the footballers which comprise the current transfer pool. One of the next posts, in my Fantasy Football &lt;a href=&quot;https://hristog.github.io/fepl.html&quot;&gt;series&lt;/a&gt;, is specifically concerned with scraping and parsing that list, and proposes an algorithm for finding optimal selections, using the minimal information provided as a starting point.&lt;/p&gt;
+&lt;p&gt;The game organizers have conveniently provided a printable single-page &lt;a href=&quot;https://fantasy.premierleague.com/player-list/&quot;&gt;reference&lt;/a&gt; to the last season's performance (in terms of total number of points only, however) of the footballers which comprise the current transfer pool. One of the next posts, in my Fantasy Football &lt;a href=&quot;https://hristog.github.io/tagged/fepl-selection&quot;&gt;series&lt;/a&gt;, is specifically concerned with scraping and parsing that list, and proposes an algorithm for finding optimal selections, using the minimal information provided as a starting point.&lt;/p&gt;
 &lt;p&gt;This post, however, will focus on a bit deeper and more interesting look at last season's total points - we'll see how each one of the top 50 players ranks relative to his team-mates, as well as players from opponent teams. In other words, this study will provide insights into a player's degree of contribution, with respect to the same positional line &lt;sup id=&quot;fnref:fepl_positions&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fn:fepl_positions&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, as well as the entire squad.&lt;/p&gt;
 &lt;h3 id=&quot;visualizations&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#visualizations&quot;&gt;Visualizations&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;div class=&quot;img-box&quot;&gt;
@@ -60,8 +60,8 @@
 &lt;p&gt;Hopefully, this post has managed to deepen your insights into last seasons's top player performance, in terms of total number of points scored. For this purpose, I presented a
 multi-dimensional view, providing information as to how a given player ranked, on the overall, relative to teammates with the most similar tasks and responsibilities&lt;sup id=&quot;fnref:football_strategy&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html#fn:football_strategy&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;,
 as well as competing players.&lt;/p&gt;
-&lt;p&gt;In further posts from the same &lt;a href=&quot;https://hristog.github.io/fepl.html&quot;&gt;series&lt;/a&gt;, we'll look into various other statistics and metrics, accompanied by descriptive visualizations, for the very same purpose stated
-above - assisting you, the reader, in making the best possible selection for the next game-week!&lt;/p&gt;
+&lt;p&gt;In further posts from the same &lt;a href=&quot;https://hristog.github.io/tagged/fepl-selection&quot;&gt;series&lt;/a&gt;, we'll look into various other statistics and metrics, accompanied by descriptive visualizations, for the very same
+purpose stated above - assisting you, the reader, in making the best possible selection for the next game-week!&lt;/p&gt;
 &lt;div class=&quot;footnote&quot;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
