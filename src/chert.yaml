@@ -7,6 +7,8 @@ site:
     &copy; 2017 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img height="14" src="/img/by-sa.png" /></a>
 
   primary_links:
+    - text: Natural Language Processing
+      href: /tagged/NLP
     - text: Fantasy Football Analysis
       href: /tagged/fantasy-football
     - text: About
