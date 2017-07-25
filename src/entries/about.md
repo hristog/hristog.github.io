@@ -27,9 +27,10 @@ if self.alive():
                  baseline=yesterday)
 ```
 
-As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of football[^soccer] flavour.
+As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour.
 
 
 [^soccer]: I'm referring to the European variety, a.k.a. soccer.
 
 [recaptcha]: https://www.google.com/recaptcha/intro/
+[football]: /tagged/football
