@@ -17,7 +17,7 @@ from the bizarrely random distribution of thought processes going on in my head.
 Please, find an excerpt from the very source code powering said thought processes:
 ```python
 # Found somewhere in the ` __init__` method.
-self.add_tag("#PerpetualStudent")
+self.add_tag("#PerpetualStudentOfLife")
 self.add_passions({'Data Science', 'AI', 'football'})
 
 # Further down in the main event loop.
