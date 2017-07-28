@@ -4,8 +4,8 @@ publish_date: Jul 23th, 2017
 tags:
   - fantasy-football
   - football
-  - fepl
-  - fepl-selection
+  - fpl
+  - fpl-selection
   - analysis
 ---
 
@@ -30,7 +30,7 @@ This post, however, will focus on a bit deeper and more interesting look at last
 [^fepl_positions]: In the Fantasy Premier League game, all players are divided into 4 categories of positions, which are fixed for the entire course of the season. Every player
 can be assigned only one position from the following list: goalkeeper, defender, midfielder, and forward.
 
-## Visualizations
+## Visualisations
 <div class="img-box">
 <a href="/uploads/fepl_tp_contributions/fepl_tp_contribution_2016_overall.png" target="_blank"><img src="/uploads/fepl_tp_contributions/fepl_tp_contribution_2016_overall_170x256.png" alt="Total Points (FEPL 2016/2017, whole season)"></a>
 <a href="/uploads/fepl_tp_contributions/fepl_tp_contribution_2016_1h.png" target="_blank"><img src="/uploads/fepl_tp_contributions/fepl_tp_contribution_2016_1h_170x256.png" alt="Total Points (FEPL 2016/2017, first half of season)"></a>
@@ -70,7 +70,7 @@ elaborate nature of modern football strategies and formations, where individual 
 
 
 [fantasy_football_wiki]: https://en.wikipedia.org/wiki/Fantasy_football_(Association)
-[fepl_selection_series]: /tagged/fepl-selection
+[fepl_selection_series]: /tagged/fpl-selection
 [fepl_section]: /tagged/fantasy-football
 [fepl_site]: https://fantasy.premierleague.com/
 [fepl_help]: https://fantasy.premierleague.com/help/
