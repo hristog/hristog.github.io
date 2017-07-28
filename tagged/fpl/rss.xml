@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" version="2.0">
     <channel>
-      <title>Conscious Automaton - fantasy-football</title>
-      <link>https://hristog.github.io/tagged/fantasy-football/</link>
+      <title>Conscious Automaton - fpl</title>
+      <link>https://hristog.github.io/tagged/fpl/</link>
       <description>&gt;&gt;&gt; from hristog.thoughts import random</description>
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
