@@ -6,6 +6,7 @@ tags:
   - football
   - fpl
   - fpl-selection
+  - epl
   - analysis
 ---
 
