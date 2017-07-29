@@ -1,7 +1,7 @@
 
 # Fantasy Premier League Team Selection
 
-This post is part of my [Fantasy Football][fepl_section] team selection [series][fepl_selection_series], where - as alluded previously - I aim to assist you in the best possible way in making your 2017/2018 picks, at pre-season time, as well as once the season has been kicked off.
+This post is a part of my [Fantasy Football][fepl_section] team selection [series][fepl_selection_series], where - as alluded previously - I aim to assist you in the best possible way in making your 2017/2018 picks, at pre-season time, as well as once the season has been kicked off.
 
 [Last time][fepl_tp_contribution] our focus was on investigating how each player - among those ones who finished at the first 50 positions, ranked by highest overall points scored - contributed to the total points count of his team and, furthermore, his playing line within the team.
 
