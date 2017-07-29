@@ -10,6 +10,7 @@ tags:
   - analysis
   - sport-analytics
   - visualisations
+  - team-play-contributions
 ---
 
 # Fantasy Premier League Team Selection
@@ -24,14 +25,15 @@ This post, however, is more concerned with the actual playing characteristics of
 
 # Contribution to Team Play
 
-Particularly, we'll look at various attacking and defensive statistics[^scored_goals_excluded] of top players from different lines. In order to keep the analyses clean and uncluttered, I've decided to split the visualizations and commentary on playing line basis. We'll start by looking at the forwards, who have netted 150 points or more last season. They turn out to be 7 in total:
-: Romelu Lukaku (221 points, avg. value £9.74)
-: Harry Kane (220 points, avg. value £11.13)
-: Diego Da Silva Costa (196 points, avg. value £10.38)
-: Sergio Agüero (175 points, avg. value £12.88)
-: Jermain Defoe (166 points, avg. value £7.54)
-: Zlatan Ibrahimovic (163 points, avg. value £11.44)
-: Jamie Vardy (161 points, avg. value £9.76)
+Particularly, we'll look at various attacking and defensive statistics[^scored_goals_excluded] of top players from different lines. In order to keep the analyses clean and uncluttered, I've decided to split the visualisations and commentary on a playing line basis; thus, this post is, essentially, the first in a [series][team_play_contributions_series], that will focus on individual contributions to team-play. We'll start by looking at the forwards, who have netted 150 points or more last season. They turn out to be 7 in total:
+
+- Romelu Lukaku (221 points, avg. value £9.74)
+- Harry Kane (220 points, avg. value £11.13)
+- Diego Da Silva Costa (196 points, avg. value £10.38)
+- Sergio Agüero (175 points, avg. value £12.88)
+- Jermain Defoe (166 points, avg. value £7.54)
+- Zlatan Ibrahimovic (163 points, avg. value £11.44)
+- Jamie Vardy (161 points, avg. value £9.76)
 
 [^scored_goals_excluded]: Please, note that I've deliberately excluded the total number of goals scored, which by itself can be a misleading statistic, as it doesn't clearly indicate whether the goals in question were scored predominantly as a result of a player's attacking positioning, his finishing skill, his teammates' creativity or otherwise.
 
@@ -66,6 +68,7 @@ That's all for today, folks! Good luck in the forthcoming Fantasy Premier League
 
 
 [fepl_selection_series]: /tagged/fpl-selection
+[team_play_contributions_series]: /tagged/team-play-contributions
 [fepl_section]: /tagged/fantasy-football
 [fepl_tp_contribution]: /fantasy_football_total_points_contributions_for_season_2016_2017.html
 [twitter]: https://twitter.com/hristogeo
