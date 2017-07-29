@@ -8,7 +8,7 @@ tags:
   - analysis
   - parsing
   - NLP
-  - visualisation
+  - visualisations
 ---
 
 Inspired by a recent characters-across-seasons-based Game Of Thrones [visualization][got_vis_reddit], I decided to perform a similar

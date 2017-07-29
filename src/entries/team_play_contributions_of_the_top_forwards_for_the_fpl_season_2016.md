@@ -8,7 +8,7 @@ tags:
   - fpl-selection
   - epl
   - analysis
-  - visualisation
+  - visualisations
 ---
 
 # Fantasy Premier League Team Selection
