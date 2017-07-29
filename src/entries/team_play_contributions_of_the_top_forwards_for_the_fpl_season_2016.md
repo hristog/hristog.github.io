@@ -8,6 +8,7 @@ tags:
   - fpl-selection
   - epl
   - analysis
+  - sport-analytics
   - visualisations
 ---
 

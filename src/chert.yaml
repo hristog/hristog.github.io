@@ -7,12 +7,17 @@ site:
     &copy; 2017 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img height="14" src="/img/by-sa.png" /></a>
 
   primary_links:
+    - text: Data Science
+      href: /tagged/data-science
+    - text: Sport Analytics
+      href: /tagged/sport-analytics
+    - text: About
+      href: /about.html
+  secondary_links:
     - text: Natural Language Processing
       href: /tagged/NLP
     - text: Fantasy Football Analysis
       href: /tagged/fantasy-football
-    - text: About
-      href: /about.html
   analytics_code: UA-102558598-1
 
 theme:
