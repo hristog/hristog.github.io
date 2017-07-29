@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playing Time Conversion Efficiency for the FPL Season 2016/2017 — Conscious Automaton</title>
+  <meta name="author" content="Hristo">
+  <meta name="description" content="&gt;&gt;&gt; from hristog.thoughts import random">
+  <link href="/atom.xml" title="Conscious Automaton Feed" type="application/atom+xml" rel="alternate" />
+
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  <!-- Font
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/github.css">
+  <link rel="stylesheet" href="/css/sedimental.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+
+  <!-- Analytics -->
+  
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+        
+        _gaq.push(['user._setAccount', 'UA-102558598-1']);
+        _gaq.push(['user._trackPageview']);
+        
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+  </script>
+  
+</head>
+<body>
+  <div class="table-container">
+    <div class="table-block footer-push">
+      <div class="container">
+        <div class="row">
+          <div id="layer-accent-div-1"></div>
+          <div id="layer-accent-div-2"></div>
+          <div id="layer-accent-div-3"></div>
+          <header id="header" class="twelve columns">
+            <h1><a href="/">Conscious Automaton</a></h1>
+            <p id="tagline-p">&gt;&gt;&gt; from hristog.thoughts import random</p>
+            <p id="pri-links-p">
+              
+              <a  title="" href="/tagged/data-science">Data Science</a>
+              
+              <a  title="" href="/tagged/sport-analytics">Sport Analytics</a>
+              
+              <a  title="" href="/about.html">About</a>
+              
+            </p>
+            <p id="sec-links-p">
+            
+              <a  title="" href="/tagged/NLP">Natural Language Processing</a>&nbsp;
+            
+              <a  title="" href="/tagged/fantasy-football">Fantasy Football Analysis</a>&nbsp;
+            
+            </p>
+            <!-- A horrible hack for inlining SVG-based links -->
+            <span class="social-media-list">
+            <a href="https://github.com/hristog" target="_blank"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+            </span><span class="username">hristog</span></a>
+
+            <a href="https://twitter.com/hristogeo" target="_blank"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#4099FF" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+            </span><span class="username">hristogeo</span></a>
+            </span>
+            <!-- End of hack -->
+            <hr>
+          </header>
+        </div>
+        
+
+
+<div class="row">
+  <div class="twelve columns entry-div">
+    <header id="entry-header">
+      <h1 id="entry-h1">Playing Time Conversion Efficiency for the FPL Season 2016/2017</h1>
+      <p id="entry-tagline"></p>
+    </header>
+      <p><h2 id="energy_conversion_efficiency"><a class="toclink" href="#energy_conversion_efficiency">Energy conversion efficiency</a></h2>
+<p>From <a href="https://en.wikipedia.org/wiki/Energy_conversion_efficiency">Wikipedia</a>:</p>
+<blockquote>
+<p>Energy conversion efficiency (<em>η</em>) is the ratio between the useful output of an energy conversion machine and the input, in energy terms. The input, as well as the useful output may be electric power, mechanical work, light (radiation), or heat.</p>
+</blockquote>
+<p>Welcome to another post from my <a href="/tagged/fantasy-football">Fantasy Football</a> team selection <a href="/tagged/fpl-selection">series</a>. Today, we're going to view football players as playing-time "conversion machines", and thus aim to draw a suitable parallel to the <em>energy conversion efficiency</em> metric, for the purpose of gathering a different dimension of insights about the Fantasy Premier League transfer market.</p>
+<h2 id="playing_time"><a class="toclink" href="#playing_time">Playing time</a></h2>
+<p>Particularly, for completion of the analogy, and actually for enabling our analysis to provide meaningful conclusions, we'll imagine - within the context of this post only - that football players are machines
+that convert playing minutes into fantasy football points.</p>
+<p>Since the average number of points per match<sup id="fnref:playing_only"><a rel="footnote" class="footnote-ref" href="#fn:playing_only">1</a></sup> an FPL player scored in 2016/2017 was only 2.97, our ratio of interest will be <em>average number of points scored per 90 minutes</em> (which is the duration of the regular time of all English Premier League matches). This means that we'll be looking for players who were able to take as many as possible playing minutes as input, and produce as many as possible points as output, namely footballers with high <em>playing time conversion efficiency</em>.</p>
+<p>There's a gotcha involved, of course, and - as you may have guessed already - assuming the aforementioned ratio to be the only criterion employed, when drawing conclusions regarding playing efficiency, would be an utter failure at best.</p>
+<p>Consider, for instance, an imaginary footballer who scores two goals in the first game of the season, then gets an injury which prevents him from playing a full-match for 10 weeks, then scores a goal and makes an assist in his second match of the season, then gets injured again, until the very last match of the season, when he comes in for about 35 minutes, as a substitute - no goals, no assist this time. What do you think? Would it have been reasonable, in hindsight, to have purchased this player in the beginning of the season and to have kept him in your squad until the very end of the season, without having transferred him out. I believe your answer is No, and it should be - despite the high <em>playing time conversion efficiency</em> ratio he managed to squeeze out. Perhaps, he's an extremely skilled footballer, but we have to keep in mind his injury proneness as well, as I alluded to in the <a href="/team_play_contributions_of_the_top_forwards_for_the_fpl_season_2016_2017.html">first post</a> of my team-play contributions <a href="/tagged/team-play-contributions">series</a>. The number of playing minutes can usually be the best obtainable proxy, as all datasets, involving physiological player data, are strictly proprietary.</p>
+<p>Therefore, as an outlier detection method, we'll employ the following simple heuristic: we'll filter out all players,
+who participated in less than a pre-defined portion of all matches of their team; I've opted for 75%<sup id="fnref:participation_threshold"><a rel="footnote" class="footnote-ref" href="#fn:participation_threshold">2</a></sup>,
+which seems to be a reasonable enough figure<sup id="fnref:fa_participation_requirement"><a rel="footnote" class="footnote-ref" href="#fn:fa_participation_requirement">3</a></sup>. This, basically, means that we'll be only focusing on players who took part in at least 29 Premier League games during the 2016/2017 season.</p>
+<h2 id="visualisation"><a class="toclink" href="#visualisation">Visualisation</a></h2>
+<p><a target="_blank" href="/uploads/fepl_playing_time_conversion_efficiency/Playing_time_converstion_efficiency.png"><img src="uploads/fepl_playing_time_conversion_efficiency/Playing_time_converstion_efficiency_230x256.png" alt="Playing Time Conversion Efficiency (FPL Season 2016/2017)" /></a></p>
+<p>This time we've got one graph only - nevertheless, it's fully-packed with useful information (that's why it doesn't need any companions). Firstly, we've got a bunch of points on the 2-D plane - each one of them
+corresponds to a player, who played in at least 29 English Premier League matches in 2016/2017<sup id="fnref:fpl_only"><a rel="footnote" class="footnote-ref" href="#fn:fpl_only">4</a></sup>.</p>
+<p>Along the <em>x</em>-axis, there is the total points count for each of the players, and along the <em>y</em>-axis - the average number of points scored per 90 mins (that is, essentially, our <em>playing time conversion efficiency</em> ratio), both of which will serve, visually, for comparative purposes. A further dimension that has been depicted is the average player value, encoded as the area<sup id="fnref:circle_area"><a rel="footnote" class="footnote-ref" href="#fn:circle_area">5</a></sup> (or size, in layman terms) of the corresponding circle. Thus, the total points and conversion efficiency readings, should be taken based on the centre of a player's circle. I've further annotated the most important quadrant - the upper right one, where we have the highest total points totals and the highest time conversion ratio - with the footballer names, for clarity (although, to be fair, this wasn't really necessary for Agüero or Sánchez, due to the enormous transfer value of the former, and the top rank - in total points terms - of the latter). Last but not least, I've colour-coded the footballer circles based on their playing line, in order to be
+able to visually distinguish patterns, related to individual lines.</p>
+<p>A few quick observations:</p>
+<ul>
+<li>No goalkeeper has managed to score more than 150 points.</li>
+<li>The average transfer values of goalkeepers and defenders are lowest, whilst midfielders cost higher on average, and forwards cost even higher. This is not that surprising, given the fact that the playing lines of the highest-point-scoring footballers are exactly the latter two.</li>
+<li>Despite the leadership of the forwards - in the value ranking - we can clearly see that, in terms of scoring fantasy football points, the best-performing midfielders are at least as good, and as efficient, as the best-performing forwards.</li>
+</ul>
+<p>Finally, as an example of the usefulness of the graph, let's consider the following players, for the purpose of performing some straightforward head-to-head comparisons:</p>
+<ul>
+<li>Gary Cahill (DEF)</li>
+<li>Marcos Alonso (DEF)</li>
+<li>Gylfi Sigurdsson (MID)</li>
+<li>Joshua King (MID)</li>
+<li>Bamidele Alli (MID)</li>
+<li>Roberto Firmino (MID)</li>
+<li>Diego Da Silva Costa (FWD)</li>
+<li>Romelu Lukaku (FWD)</li>
+</ul>
+<p>It is obvious that one would have been better off with a combination of King and Cahill, instead of Alonso and Sigurdsson. Further, Alli ranks much better - whilst characterised by similar average value - than Firmino, and one would have had a more successful selection, if it had included Lukaku, at the expense of Costa.</p>
+<h2 id="conclusion"><a class="toclink" href="#conclusion">Conclusion</a></h2>
+<p>This marks the end of the current analysis, concerned with playing time conversion efficiency. If you
+have found this post useful, please, feel free to share a link to it on your social media profiles.
+Ciao until <a href="/tagged/fpl-selection">next time</a> ;)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:playing_only">
+<p>This statistic, naturally, considers only those matches in which a player participated for at least a single minute. Averaging over playing and non-playing "participations" brings us down to an 1.31 average points scored per match, across the entire last season. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:playing_only">↩</a></p>
+</li>
+<li id="fn:participation_threshold">
+<p>The straightforward maths goes as follows: 75% x 38 = 28.5, and to be on the strict side, I've taken the ceiling of that number, namely 29, to be the minimum requirement for a number of matches played, in order to be included into our analysis. <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:participation_threshold">↩</a></p>
+</li>
+<li id="fn:fa_participation_requirement">
+<p>The flat requirement, for granting permissions to non-EU players to obtain work permits and join English football clubs officially, used to be international-level participation of exactly 75% or more, over the past 24 months. But, in 2015, the requirements were re-assessed and subsequently updated to include tiers, based on the FIFA ranking of the particular non-EU country, whose passport is held by the footballer in question. Nevertheless, for the lowest ranking range, it is still required that the participation ratio, on international level, is <a href="http://www.inbrief.co.uk/football-law/footballer-work-permits/">at least 75%</a> for potential new signings. <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:fa_participation_requirement">↩</a></p>
+</li>
+<li id="fn:fpl_only">
+<p>Namely, in the context of the Fantasy Premier League 2016/2017 selection pool, that's 164 players, out of 683 in total. It is noteworthy to mention Zlatan Ibrahimovic who, among others, didn't make the cut to be included into our conversion efficiency analysis, as he only played in 28 of Manchester United's Premier Leagues games. <a rev="footnote" title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:fpl_only">↩</a></p>
+</li>
+<li id="fn:circle_area">
+<p>In fact, for the purpose of facilitating visualisation clarity, I have exponentiated - by a constant - all player average values, in order to put further emphasis on the relative differences. Thus, please, note that the circle areas (or radii) do not correspond to the average values for the FPL 2016/2017 season, in a one-to-one fashion. <a rev="footnote" title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:circle_area">↩</a></p>
+</li>
+</ol>
+</div><p></p>
+
+
+
+<hr />
+
+
+  </div>
+  <div class="twelve columns metadata metadata-div">
+    <a href="/playing_time_conversion_efficiency_for_the_fpl_season_2016_2017.html" title="2017-07-29T00:00:00+0100" class="date post-timestamp">Jul 29th, 2017</a>
+  </div>
+  <div class="twelve columns metadata metadata-div">
+    
+    <span class="tags">
+      <a href="/tagged/fantasy-football">#fantasy-football</a> <a href="/tagged/football">#football</a> <a href="/tagged/fpl">#fpl</a> <a href="/tagged/fpl-selection">#fpl-selection</a> <a href="/tagged/epl">#epl</a> <a href="/tagged/analysis">#analysis</a> <a href="/tagged/sport-analytics">#sport-analytics</a> <a href="/tagged/visualisations">#visualisations</a> 
+    </span>
+    
+  </div>
+  
+  <div class="twelve columns" id="previously-div">
+    <h5>Previously</h5>
+    
+    <a href="/team_play_contributions_of_the_top_forwards_for_the_fpl_season_2016_2017.html">Team-Play Contributions of the Top Forwards for the FPL Season 2016/2017</a><br/>
+    
+    <a href="/fantasy_football_total_points_contributions_for_season_2016_2017.html">Fantasy Football Total Points Contributions for Season 2016/2017</a><br/>
+    
+    <a href="/screen_time_analysis_of_friends_transcripts.html">Screen-time Analysis of &quot;Friends&quot; Transcripts</a><br/>
+    
+  </div>
+  
+</div>
+
+
+
+      </div> <!-- End header/content container -->
+    </div>
+    <div class="table-block">
+      <div class="container">
+        <footer id="footer" class="twelve columns">
+          &copy; 2017 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img height="14" src="/img/by-sa.png" /></a> <a href="/atom.xml"><img height="14" src="/img/feed.png"></a>
+        </footer>
+      </div>
+    </div>  <!-- end table block footer div -->
+  </div>
+  <!-- Last generated: 2017-07-29T19:59:19Z -->
+</body>
+</html>
+
+
+
+
+
