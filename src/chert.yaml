@@ -9,8 +9,8 @@ site:
   primary_links:
     - text: Data Science
       href: /tagged/data-science
-    - text: Sport Analytics
-      href: /tagged/sport-analytics
+    - text: Sports Analytics
+      href: /tagged/sports-analytics
     - text: About
       href: /about.html
   secondary_links:
