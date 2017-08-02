@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-07-29T22:30:54Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2017-08-02T21:54:09Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -102,7 +102,7 @@ Ciao until &lt;a href=&quot;https://hristog.github.io/tagged/fpl-selection&quot;
         <category>fpl-selection</category>
         <category>epl</category>
         <category>analysis</category>
-        <category>sport-analytics</category>
+        <category>sports-analytics</category>
         <category>visualisations</category>
         
       </item>
@@ -175,7 +175,7 @@ total amount of points scored for the corresponding season, as well as the avera
         <category>fpl-selection</category>
         <category>epl</category>
         <category>analysis</category>
-        <category>sport-analytics</category>
+        <category>sports-analytics</category>
         <category>visualisations</category>
         <category>team-play-contributions</category>
         
@@ -257,7 +257,7 @@ elaborate nature of modern football strategies and formations, where individual 
         <category>fpl-selection</category>
         <category>epl</category>
         <category>analysis</category>
-        <category>sport-analytics</category>
+        <category>sports-analytics</category>
         <category>visualisations</category>
         
       </item>
