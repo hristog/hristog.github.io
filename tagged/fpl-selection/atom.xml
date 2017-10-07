@@ -5,12 +5,51 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/fpl-selection/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/fpl-selection/atom.xml" />
-  <updated>2017-10-05T19:23:23Z</updated>
+  <updated>2017-10-07T09:32:09Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
   <rights type="html">&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</rights>
   <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>
+  
+  <entry>
+    <id>https://hristog.github.io/team_play_contributions_of_the_top_defenders_for_the_fpl_season_2016_2017.html</id>
+    <author>
+      <name>Hristo</name>
+      <uri>https://hristog.github.io/</uri>
+    </author>
+    <title>Team-Play Contributions of the Top Defenders for the FPL Season 2016/2017</title>
+    <link rel="alternate" type="text/html" href="https://hristog.github.io/team_play_contributions_of_the_top_defenders_for_the_fpl_season_2016_2017.html" />
+    <published>2017-08-07T23:00:00Z</published>
+    <updated>2017-08-07T23:00:00Z</updated>
+    <category term="fantasy-football"/><category term="football"/><category term="fpl"/><category term="fpl-selection"/><category term="epl"/><category term="analysis"/><category term="sports-analytics"/><category term="visualisations"/><category term="team-play-contributions"/>
+    
+
+    <content type="html">&lt;p&gt;&lt;h2 id=&quot;contribution_to_team_play_defenders&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/team_play_contributions_of_the_top_defenders_for_the_fpl_season_2016_2017.html#contribution_to_team_play_defenders&quot;&gt;Contribution to Team Play: Defenders&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It's time for the concluding post from the team-player contribution &lt;a href=&quot;https://hristog.github.io/tagged/team-play-contributions&quot;&gt;series&lt;/a&gt; on the defense line. I've opted to not write one on goalkeepers, not because I don't consider that particular position to be as valuable as the others. On the contrary, I am a big proponent of the saying that a good goalkeeper is makes up half a team.&lt;/p&gt;
+&lt;p&gt;However, neither have I unlimited time for writing this blog, nor your time - as readers - is unlimited. Football is a game where goals are the ultimate determinant at the end of the day, and regardless of whether you're a beginner fantasy manager or a seasoned one, it's not a secret to you that attacking players tend to score a significantly larger amount of &lt;a href=&quot;https://hristog.github.io/fantasy_football_total_points_contributions_for_season_2016_2017.html&quot;&gt;points&lt;/a&gt; than the defensive ones, especially goalkeepers. Thus, my decision to not allot precious air time on them in this particular analysis.&lt;/p&gt;
+&lt;p&gt;Off we go to the pretty radar plots I've compiled for you.&lt;/p&gt;
+&lt;h2 id=&quot;visualisations&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/team_play_contributions_of_the_top_defenders_for_the_fpl_season_2016_2017.html#visualisations&quot;&gt;Visualisations&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Cesar_Azpilicueta.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Cesar_Azpilicueta_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Charlie_Daniels.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Charlie_Daniels_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/David_Luiz_Moreira_Marinho.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/David_Luiz_Moreira_Marinho_252x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Gary_Cahill.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Gary_Cahill_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Gareth_McAuley.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Gareth_McAuley_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Kyle_Walker.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Kyle_Walker_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Leighton_Baines.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Leighton_Baines_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Marcos_Alonso.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Marcos_Alonso_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Seamus_Coleman.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/fepl_play_contributions/Seamus_Coleman_250x256.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/team_play_contributions_of_the_top_defenders_for_the_fpl_season_2016_2017.html#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Thanks for tagging along for this one, too! Now that the kick-off of the FPL 2017/2018 season is steadily approaching, there's not much left here to say, but to wish all of you good luck. May the best fantasy manager lift the trophy at the end of gameweek 38! :)&lt;/p&gt;
+&lt;p&gt;Oh, almost forgot - for those of you who are particularly hungry for more data-analysis- or visualisation-related content, feel free to check out my Twitter &lt;a href=&quot;https://twitter.com/hristogeo&quot;&gt;feed&lt;/a&gt; which has been kept relatively fresh, with a few (re-)tweets per week.&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;hr /&gt;
+
+</content>
+
+  </entry>
   
   <entry>
     <id>https://hristog.github.io/team_play_contributions_of_the_top_midfielders_for_the_fpl_season_2016_2017.html</id>
