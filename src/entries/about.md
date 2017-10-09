@@ -4,7 +4,7 @@ publish_date: Jul 20, 2017
 special: true
 ---
 
-Welcome to my blog, regardless of how randomly you've arrived here! Also, this blog
+Welcome to my blog, regardless of how randomly you've arrived here! Also, this web space
 doesn't discriminate between human beings and search-engine robots[^google_bot], so congrats for
 having joined the party (intendedly or not ;) )!
 
@@ -29,8 +29,11 @@ if self.alive():
 
 As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour.
 
+Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made.
 
 [^soccer]: I'm referring to the European variety, a.k.a. soccer.
 
 [recaptcha]: https://www.google.com/recaptcha/intro/
 [football]: /tagged/football
+[github]: https://github.com/hristog
+[github_prs]: https://github.com/search?o=asc&q=is%3Apr+author%3Ahristog&ref=searchresults&s=created&type=Issues&utf8=✓
