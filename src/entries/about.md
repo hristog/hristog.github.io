@@ -27,13 +27,17 @@ if self.alive():
                  baseline=yesterday)
 ```
 
-As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour.
+As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour[^football_skills].
 
 Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made.
 
 [^soccer]: I'm referring to the European variety, a.k.a. soccer.
 
+[^football_skills]: For the curious among yourselves, I've recorded a sample of a little kickabout
+of mine with a mini-football. [Enjoy][football_video] :)
+
 [recaptcha]: https://www.google.com/recaptcha/intro/
 [football]: /tagged/football
 [github]: https://github.com/hristog
 [github_prs]: https://github.com/search?o=asc&q=is%3Apr+author%3Ahristog&ref=searchresults&s=created&type=Issues&utf8=✓
+[football_video]: https://www.youtube.com/watch?v=yiiYNxNOmxk
