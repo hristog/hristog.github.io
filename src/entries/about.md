@@ -29,7 +29,7 @@ if self.alive():
 
 As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour[^football_skills].
 
-Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made.
+Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made. I'm an avid reader and podcast listener, and I've recently put together a list of all Python, Machine Learning and [#DataScience][data_science]-related [podcasts][podcasts] that I follow on a daily basis. A similar list of books might follow.
 
 [^soccer]: I'm referring to the European variety, a.k.a. soccer.
 
@@ -41,3 +41,5 @@ of mine with a mini-football. [Enjoy][football_video] :)
 [github]: https://github.com/hristog
 [github_prs]: https://github.com/search?o=asc&q=is%3Apr+author%3Ahristog&ref=searchresults&s=created&type=Issues&utf8=✓
 [football_video]: https://www.youtube.com/watch?v=yiiYNxNOmxk
+[data_science]: https://hristog.github.io/tagged/data-science
+[podcasts]: https://github.com/hristog/awesome-podcasts
