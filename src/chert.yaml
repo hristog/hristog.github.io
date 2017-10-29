@@ -11,6 +11,10 @@ site:
       href: /tagged/data-science
     - text: Sports Analytics
       href: /tagged/sports-analytics
+    - text: Python
+      href: /tagged/python
+    - text: Linux
+      href: /tagged/linux
     - text: About
       href: /about.html
   secondary_links:
