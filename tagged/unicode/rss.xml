@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-10-29T12:33:47Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2017-10-29T21:50:20Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -33,7 +33,7 @@ of Unicode-related processing in Python ...&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;I'd bet those of you who have used Python for a bit larger than trivial project have invariably encountered
+&lt;p&gt;I'd bet those of you who have used Python for a bit larger than trivial project have invariably &lt;a href=&quot;https://duckduckgo.com/?q=Python+UnicodeEncodeError&quot;&gt;encountered&lt;/a&gt;
 some variety of it.&lt;/p&gt;
 &lt;p&gt;Let's see how we could approach this issue in different ways. For this purse, I'll first go
 ahead and  define a
