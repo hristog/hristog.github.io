@@ -16,7 +16,7 @@ Anyway, this brief note is for those of you who've ever run into a not-so-helpfu
 UnicodeEncodeError: 'ascii' codec can't encode character u'\xef' in position 2: ordinal not in range(128)
 ```
 
-I'd bet those of you who have used Python for a bit larger than trivial project have invariably encountered
+I'd bet those of you who have used Python for a bit larger than trivial project have invariably [encountered][unicode_error_search]
 some variety of it.
 
 Let's see how we could approach this issue in different ways. For this purse, I'll first go
@@ -101,3 +101,4 @@ Happy debugging of `UnicodeError`s, everybody :)
 
 [unicodedata_module]: https://docs.python.org/2/library/unicodedata.html
 [stackoverflow_unicodedata]: https://stackoverflow.com/a/7782177
+[unicode_error_search]: https://duckduckgo.com/?q=Python+UnicodeEncodeError
