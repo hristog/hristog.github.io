@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en">
+  <id>https://hristog.github.io/tagged/python/</id>
+  <title type="text">Conscious Automaton - python</title>
+  <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
+  <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/python/" />
+  <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/python/atom.xml" />
+  <updated>2017-10-29T12:26:17Z</updated>
+  <sy:updatePeriod>hourly</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+
+  <rights type="html">&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</rights>
+  <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>
+  
+  <entry>
+    <id>https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html</id>
+    <author>
+      <name>Hristo</name>
+      <uri>https://hristog.github.io/</uri>
+    </author>
+    <title>Converting Unicode representations to ASCII in Python</title>
+    <link rel="alternate" type="text/html" href="https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html" />
+    <published>2017-10-28T23:00:00Z</published>
+    <updated>2017-10-28T23:00:00Z</updated>
+    <category term="python"/><category term="unicode"/>
+    
+
+    <content type="html">&lt;p&gt;&lt;h2 id=&quot;python_and_unicode&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#python_and_unicode&quot;&gt;Python and Unicode&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Oh, my - If I had a nickel/five-pence every time I had to deal with various kinds
+of Unicode-related processing in Python ...&lt;/p&gt;
+&lt;p&gt;Anyway, this brief note is for those of you who've ever run into a not-so-helpful error message, along the lines of the following:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;: &lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt; codec can&lt;span style=&quot;color: #BB4444&quot;&gt;'t encode character u'&lt;/span&gt;\xef&lt;span style=&quot;color: #BB4444&quot;&gt;' in position 2: ordinal not in range(128)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I'd bet those of you who have used Python for a bit larger than trivial project have invariably encountered
+some variety of it.&lt;/p&gt;
+&lt;p&gt;Let's see how we could approach this issue in different ways. For this purse, I'll first go
+ahead and  define a
+simple use-case: we're experimenting with a given dataset and we want to run a number of
+Machine Learning methods against the dataset and output a nice log file with performance
+summary and results for each method.&lt;/p&gt;
+&lt;p&gt;As it turns out, not all ML method names were created equal, and for some of them
+we need more characters than those defined in the basic ASCII table:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: method &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'Naïve Bayes'&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: method
+Out[&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'Na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xef&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve Bayes'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So far so good - Python has successfully been able to encode our special character
+&lt;code&gt;ï&lt;/code&gt; as &lt;code&gt;\xef&lt;/code&gt;. However, once we attempt to put that into a non-unicode string, all hell
+breaks loose:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
+&lt;span style=&quot;color: #666666&quot;&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;                        Traceback (most recent call last)
+&lt;span style=&quot;color: #666666&quot;&gt;&amp;lt;&lt;/span&gt;ipython&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #AA22FF&quot;&gt;input&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;-31-&lt;/span&gt;c5a4e402b551&lt;span style=&quot;color: #666666&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;in&lt;/span&gt; &lt;span style=&quot;color: #666666&quot;&gt;&amp;lt;&lt;/span&gt;module&lt;span style=&quot;color: #666666&quot;&gt;&amp;gt;&lt;/span&gt;()
+&lt;span style=&quot;color: #666666&quot;&gt;----&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt; method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
+
+&lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;: &lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt; codec can&lt;span style=&quot;color: #BB4444&quot;&gt;'t encode character u'&lt;/span&gt;\xef&lt;span style=&quot;color: #BB4444&quot;&gt;' in position 2: ordinal not in range(128)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;At this point, we have a couple of options: ignore-and-remove the problematic character or
+try to somehow convert it to an approximate representation that is part of the
+ASCII character set. Let's explore the former option first:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;encode(&lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'ignore'&lt;/span&gt;))
+Out[&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'Nave_Bayes_method.log'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Fair enough, it works and we get what we pay for it, but surely we could do better,
+right?&lt;/p&gt;
+&lt;p&gt;Alternatively, if we're happy with non-ASCII file names occupying our file system, we
+could just do:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;6&lt;/span&gt;]: method_filename
+Out[&lt;span style=&quot;color: #666666&quot;&gt;6&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'Na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xc3\xaf&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve_Bayes_method.log'&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;7&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;print&lt;/span&gt;(method_filename)
+Na&lt;span style=&quot;border: 1px solid #FF0000&quot;&gt;ï&lt;/span&gt;ve_Bayes_method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;log
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;However, that's not really the point of this exercise. Let's see if we could do even better.&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;unicodedata&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;9&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(
+            unicodedata&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;normalize(
+                &lt;span style=&quot;color: #BB4444&quot;&gt;'NFKD'&lt;/span&gt;, method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;encode(
+                     &lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'ignore'&lt;/span&gt;))
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;10&lt;/span&gt;]: method_filename
+Out[&lt;span style=&quot;color: #666666&quot;&gt;10&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'Naive_Bayes_method.log'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is where the &lt;a href=&quot;https://docs.python.org/2/library/unicodedata.html&quot;&gt;&lt;code&gt;unicodedata&lt;/code&gt;&lt;/a&gt; module from the Python Standard
+Library comes to the rescue. In this case, either of the &lt;code&gt;NFD&lt;/code&gt; or &lt;code&gt;NFKD&lt;/code&gt; normalizations would work, as
+described in the documentation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[Canonical decomposition] translates each character into its decomposed form.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is exactly what we needed, wasn't it? An equivalent ASCII representation of our fancy
+ML method names.&lt;/p&gt;
+&lt;p&gt;Finally, I would like to give credit to a StackOverflow &lt;a href=&quot;https://stackoverflow.com/a/7782177&quot;&gt;answer&lt;/a&gt;, from which I
+learned about the &lt;code&gt;unicodedata.normalize&lt;/code&gt; functionality that gave rise to the current post.&lt;/p&gt;
+&lt;p&gt;Happy debugging of &lt;code&gt;UnicodeError&lt;/code&gt;s, everybody :)&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;hr /&gt;
+
+</content>
+
+  </entry>
+  
+</feed>
