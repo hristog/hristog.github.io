@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/python/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/python/atom.xml" />
-  <updated>2017-11-04T14:25:51Z</updated>
+  <updated>2017-11-04T15:06:46Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -32,7 +32,7 @@ advantages, disadvantages, features, etc., you might want to head over to Hacker
 &lt;p&gt;If you opted to do a Depth-First-Search of the above articles, then I may have already lost you as a reader already. If, however, you didn't get put off by my desperate attempts at humor, and somehow found your way back to this post, then welcome back. &lt;code&gt;else # i.e., you prefer synthesized content&lt;/code&gt;, keep reading :).&lt;/p&gt;
 &lt;h2 id=&quot;python1_on_termux&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#python1_on_termux&quot;&gt;Python&lt;sup id=&quot;fnref:google_play_screenshot&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:google_play_screenshot&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; on Termux&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once you've got Termux &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.termux&quot;&gt;installed&lt;/a&gt; in your Android environment, you simply need a
-couple of straightforward steps to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as &quot;Legacy Python&quot; in the recent history of the language) and v3.&lt;/p&gt;
+couple of straightforward steps&lt;sup id=&quot;fnref:termux_permissions&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:termux_permissions&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as &quot;Legacy Python&quot; in the recent history of the language) and v3.&lt;/p&gt;
 &lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;apt update &lt;span style=&quot;color: #666666&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;termux-setup-storage
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;pkg install python
@@ -40,8 +40,7 @@ couple of straightforward steps to update your packages and install Python. Fort
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Upon successful completion of the above steps, you should be able to access your Python scripts and
-other files from &lt;code&gt;$HOME/storage&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Upon successful completion of the above steps, you should be able to &lt;a href=&quot;https://termux.com/storage.html&quot;&gt;access&lt;/a&gt; your Python scripts and other files from &lt;code&gt;$HOME/storage&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;pip_gotcha_s&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#pip_gotcha_s&quot;&gt;&lt;code&gt;pip&lt;/code&gt; gotcha's&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;As you probably have guessed already, each Python package comes hand in hand with its accompanying &lt;code&gt;pip&lt;/code&gt; utility: &lt;code&gt;pip&lt;/code&gt; for Python v3 and &lt;code&gt;pip2&lt;/code&gt; for &quot;Legacy Python&quot;.&lt;/p&gt;
 &lt;p&gt;However, observe the following check-with-a-pawn kind of situation:&lt;/p&gt;
@@ -68,9 +67,9 @@ non-&quot;Legacy Python&quot;. This may arise if you updated &lt;code&gt;pip2&lt
 
 &lt;h2 id=&quot;editing_your_scripts&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#editing_your_scripts&quot;&gt;Editing your scripts&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Being a multi-functional terminal emulator, Termux does provide support for
-traditional editors such as &lt;code&gt;vi&lt;/code&gt; and &lt;code&gt;vim&lt;/code&gt;. However, despite the aforementioned
-equivalents to full-fledged keyboards (physical or otherwise), I've found the use
-of CLI-based text editors&lt;sup id=&quot;fnref:vim_vs_emacs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:vim_vs_emacs&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to be a bit awkward without an external keyboard.&lt;/p&gt;
+traditional editors such as &lt;code&gt;vi&lt;/code&gt; and &lt;code&gt;vim&lt;/code&gt;. However, despite the &lt;a href=&quot;https://termux.com/touch-keyboard.html&quot;&gt;built-in&lt;/a&gt;
+key(-combination) equivalents to full-fledged keyboards (physical or otherwise), I've found the use
+of CLI-based text editors&lt;sup id=&quot;fnref:vim_vs_emacs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:vim_vs_emacs&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; to be a bit awkward without an external keyboard.&lt;/p&gt;
 &lt;p&gt;For the purpose of editing my Python scripts, I've found &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.aor.droidedit&quot;&gt;DroidEdit&lt;/a&gt;
 to do the job just well enough. Of course, Google will probably be able to provide you
 detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go wrong if you give DroidEdit a go, as a first attempt.&lt;/p&gt;
@@ -80,9 +79,13 @@ detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go 
 &lt;li id=&quot;fn:google_play_screenshot&quot;&gt;
 &lt;p&gt;Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :) &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:google_play_screenshot&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li id=&quot;fn:termux_permissions&quot;&gt;
+&lt;p&gt;Keep in mind you'll need to enable access and write storage permissions at
+the app level, for Termux. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:termux_permissions&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;li id=&quot;fn:vim_vs_emacs&quot;&gt;
 &lt;p&gt;No, I do not intend to dive into a detailed dispute of the eternal
-Vim-vs-Emacs question. But Vim is the better one ... :) &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:vim_vs_emacs&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+Vim-vs-Emacs question. But Vim is the better one ... :) &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:vim_vs_emacs&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
