@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/atom.xml" />
-  <updated>2017-11-04T13:04:14Z</updated>
+  <updated>2017-11-04T14:16:48Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -114,7 +114,7 @@ learned about the &lt;code&gt;unicodedata.normalize&lt;/code&gt; functionality t
 &lt;ol&gt;
 &lt;li id=&quot;fn:python_version&quot;&gt;
 &lt;p&gt;Please, note that the code examples accompanying this post are
-relevant to Python v2 - which has been labeled as &quot;legacy Pyton&quot;, in the context of
+relevant to Python v2 - which has been labeled as &quot;Legacy Python&quot;, in the context of
 the official community discontinuing its support in 2020 - and,
 particularly, &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fnref:python_version&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
