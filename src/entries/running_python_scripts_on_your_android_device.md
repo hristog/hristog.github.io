@@ -18,9 +18,12 @@ If you opted to do a Depth-First-Search of the above articles, then I may have a
 
 # Python[^google_play_screenshot] on Termux
 Once you've got Termux [installed][termux_google_play] in your Android environment, you simply need a
-couple of straightforward steps to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as "Legacy Python" in the recent history of the language) and v3.
+couple of straightforward steps[^termux_permissions] to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as "Legacy Python" in the recent history of the language) and v3.
 
 [^google_play_screenshot]: Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :)
+
+[^termux_permissions]: Keep in mind you'll need to enable access and write storage permissions at
+the app level, for Termux.
 
 ```bash
 $ apt update && apt upgrade
@@ -29,8 +32,7 @@ $ pkg install python
 $ pkg install python2
 ```
 
-Upon successful completion of the above steps, you should be able to access your Python scripts and
-other files from `$HOME/storage`.
+Upon successful completion of the above steps, you should be able to [access][termux_storage] your Python scripts and other files from `$HOME/storage`.
 
 # `pip` gotcha's
 
@@ -62,8 +64,8 @@ alias pip_install2=python2 -m pip install
 # Editing your scripts
 
 Being a multi-functional terminal emulator, Termux does provide support for
-traditional editors such as `vi` and `vim`. However, despite the aforementioned
-equivalents to full-fledged keyboards (physical or otherwise), I've found the use
+traditional editors such as `vi` and `vim`. However, despite the [built-in][termux_keyboard]
+key(-combination) equivalents to full-fledged keyboards (physical or otherwise), I've found the use
 of CLI-based text editors[^vim_vs_emacs] to be a bit awkward without an external keyboard.
 
 [^vim_vs_emacs]: No, I do not intend to dive into a detailed dispute of the eternal
@@ -77,7 +79,6 @@ detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go 
 [termux_keyboard]: https://termux.com/touch-keyboard.html
 [termux_storage]: https://termux.com/storage.html
 [termux_google_play]: https://play.google.com/store/apps/details?id=com.termux
-[termux_python]: https://wiki.termux.com/wiki/Python
 [droid_edit_google_play]: https://play.google.com/store/apps/details?id=com.aor.droidedit
 [termux_hn_1]: https://news.ycombinator.com/item?id=9905391
 [termux_hn_2]: https://news.ycombinator.com/item?id=11572939
