@@ -27,7 +27,7 @@ Machine Learning methods against the dataset and output a nice log file with per
 summary and results for each method.
 
 [^python_version]: Please, note that the code examples accompanying this post are
-relevant to Python v2 - which has been labeled as "legacy Pyton", in the context of
+relevant to Python v2 - which has been labeled as "Legacy Python", in the context of
 the official community discontinuing its support in 2020 - and,
 particularly, `Python 2.7.12`.
 
