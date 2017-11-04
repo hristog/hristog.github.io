@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/unicode/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/unicode/atom.xml" />
-  <updated>2017-10-29T21:50:20Z</updated>
+  <updated>2017-11-04T13:01:54Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -35,14 +35,15 @@ of Unicode-related processing in Python ...&lt;/p&gt;
 
 &lt;p&gt;I'd bet those of you who have used Python for a bit larger than trivial project have invariably &lt;a href=&quot;https://duckduckgo.com/?q=Python+UnicodeEncodeError&quot;&gt;encountered&lt;/a&gt;
 some variety of it.&lt;/p&gt;
-&lt;p&gt;Let's see how we could approach this issue in different ways. For this purse, I'll first go
+&lt;p&gt;Let's see how we could approach this issue&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in different ways. For this purse, I'll first go
 ahead and  define a
 simple use-case: we're experimenting with a given dataset and we want to run a number of
 Machine Learning methods against the dataset and output a nice log file with performance
 summary and results for each method.&lt;/p&gt;
 &lt;p&gt;As it turns out, not all ML method names were created equal, and for some of them
 we need more characters than those defined in the basic ASCII table:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: method &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'Naïve Bayes'&lt;/span&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
+In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: method &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'Naïve Bayes'&lt;/span&gt;
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: method
 Out[&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'Na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xef&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve Bayes'&lt;/span&gt;
@@ -107,7 +108,18 @@ described in the documentation:&lt;/p&gt;
 ML method names.&lt;/p&gt;
 &lt;p&gt;Finally, I would like to give credit to a StackOverflow &lt;a href=&quot;https://stackoverflow.com/a/7782177&quot;&gt;answer&lt;/a&gt;, from which I
 learned about the &lt;code&gt;unicodedata.normalize&lt;/code&gt; functionality that gave rise to the current post.&lt;/p&gt;
-&lt;p&gt;Happy debugging of &lt;code&gt;UnicodeError&lt;/code&gt;s, everybody :)&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Happy debugging of &lt;code&gt;UnicodeError&lt;/code&gt;s, everybody :)&lt;/p&gt;
+&lt;div class=&quot;footnote&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn:python_version&quot;&gt;
+&lt;p&gt;Please, note that the code examples accompanying this post are
+relevant to Python v2 - which has been labeled as &quot;legacy Pyton&quot;, in the context of
+the official community discontinuing its support in 2020 - and,
+particularly, &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fnref:python_version&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
 
 
 

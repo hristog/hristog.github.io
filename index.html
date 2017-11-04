@@ -102,14 +102,15 @@ of Unicode-related processing in Python ...</p>
 
 <p>I'd bet those of you who have used Python for a bit larger than trivial project have invariably <a href="https://duckduckgo.com/?q=Python+UnicodeEncodeError">encountered</a>
 some variety of it.</p>
-<p>Let's see how we could approach this issue in different ways. For this purse, I'll first go
+<p>Let's see how we could approach this issue<sup id="fnref:python_version"><a rel="footnote" class="footnote-ref" href="#fn:python_version">1</a></sup> in different ways. For this purse, I'll first go
 ahead and  define a
 simple use-case: we're experimenting with a given dataset and we want to run a number of
 Machine Learning methods against the dataset and output a nice log file with performance
 summary and results for each method.</p>
 <p>As it turns out, not all ML method names were created equal, and for some of them
 we need more characters than those defined in the basic ASCII table:</p>
-<div class="codehilite"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">method</span> <span class="o">=</span> <span class="s">u'Naïve Bayes'</span>
+<div class="codehilite"><pre><span class="c"># Python 2.7.12</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">method</span> <span class="o">=</span> <span class="s">u'Naïve Bayes'</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">method</span>
 <span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s">u'Na</span><span class="se">\xef</span><span class="s">ve Bayes'</span>
@@ -174,7 +175,18 @@ described in the documentation:</p>
 ML method names.</p>
 <p>Finally, I would like to give credit to a StackOverflow <a href="https://stackoverflow.com/a/7782177">answer</a>, from which I
 learned about the <code>unicodedata.normalize</code> functionality that gave rise to the current post.</p>
-<p>Happy debugging of <code>UnicodeError</code>s, everybody :)<p></p>
+<p>Happy debugging of <code>UnicodeError</code>s, everybody :)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:python_version">
+<p>Please, note that the code examples accompanying this post are
+relevant to Python v2 - which has been labeled as "legacy Pyton", in the context of
+the official community discontinuing its support in 2020 - and,
+particularly, <code>Python 2.7.12</code>. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:python_version">↩</a></p>
+</li>
+</ol>
+</div><p></p>
 
 
 
@@ -222,7 +234,7 @@ learned about the <code>unicodedata.normalize</code> functionality that gave ris
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-10-29T21:50:19Z -->
+  <!-- Last generated: 2017-11-04T13:01:53Z -->
 </body>
 </html>
 
