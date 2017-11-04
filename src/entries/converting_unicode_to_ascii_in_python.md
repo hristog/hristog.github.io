@@ -19,16 +19,22 @@ UnicodeEncodeError: 'ascii' codec can't encode character u'\xef' in position 2: 
 I'd bet those of you who have used Python for a bit larger than trivial project have invariably [encountered][unicode_error_search]
 some variety of it.
 
-Let's see how we could approach this issue in different ways. For this purse, I'll first go
+Let's see how we could approach this issue[^python_version] in different ways. For this purse, I'll first go
 ahead and  define a
 simple use-case: we're experimenting with a given dataset and we want to run a number of
 Machine Learning methods against the dataset and output a nice log file with performance
 summary and results for each method.
 
+[^python_version]: Please, note that the code examples accompanying this post are
+relevant to Python v2 - which has been labeled as "legacy Pyton", in the context of
+the official community discontinuing its support in 2020 - and,
+particularly, `Python 2.7.12`.
+
 As it turns out, not all ML method names were created equal, and for some of them
 we need more characters than those defined in the basic ASCII table:
 
 ```ipython
+# Python 2.7.12
 In [1]: method = u'Naïve Bayes'
 
 In [2]: method
