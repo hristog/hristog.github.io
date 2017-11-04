@@ -3,6 +3,7 @@ title: Converting Unicode representations to ASCII in Python
 publish_date: Oct 29th, 2017
 tags:
   - python
+  - python-v2
   - unicode
 ---
 
