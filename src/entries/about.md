@@ -31,7 +31,7 @@ if self.alive():
 
 As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of [football][football][^soccer] flavour[^football_skills].
 
-Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made. I'm an avid reader and podcast listener, and I've recently put together a list of all [#Python][python], Machine Learning and [#DataScience][data_science]-related [podcasts][podcasts] that I follow on a daily basis. A similar list of books might follow.
+Feel free to visit my GitHub [profile][github] for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a [list][github_prs] of literally all GitHub pull requests of mine, that have ever been made. I'm an avid reader and podcast listener, and I've recently put together a [list][podcasts] of all [#Python][python], Machine Learning and [#DataScience][data_science]-related podcasts that I follow on a daily basis. A similar list of books might follow.
 
 [^soccer]: I'm referring to the European variety, a.k.a. soccer.
 
