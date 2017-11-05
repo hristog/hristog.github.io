@@ -18,6 +18,7 @@ need to be handled: say, you'd like to annotate - in a local or remote document 
 
 Let's look at the case where the cardinality of our URLs set is unity:
 ```ipython
+# Python 2.7.12
 In [1]: url
 Out[1]: 'https://www.a-random-ml-website.com/na%C3%AFve-bayes'
 ```
