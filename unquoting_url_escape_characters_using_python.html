@@ -98,7 +98,8 @@ in URLs. Yes, I don't like them either ...</p>
 <p>I can imagine a class of use cases where such kind of escape characters may
 need to be handled: say, you'd like to annotate - in a local or remote document - a number of URLs, with a given substring (of the URL itself).</p>
 <p>Let's look at the case where the cardinality of our URLs set is unity:</p>
-<div class="codehilite"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">url</span>
+<div class="codehilite"><pre><span class="c"># Python 2.7.12</span>
+<span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">url</span>
 <span class="n">Out</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="s">'https://www.a-random-ml-website.com/na%C3%AFve-bayes'</span>
 </pre></div>
 
@@ -185,7 +186,7 @@ we are empowered with the knowledge of the <code>unicodedata</code> module:</p>
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-11-05T00:13:20Z -->
+  <!-- Last generated: 2017-11-05T00:14:21Z -->
 </body>
 </html>
 

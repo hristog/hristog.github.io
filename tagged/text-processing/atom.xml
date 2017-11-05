@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/text-processing/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/text-processing/atom.xml" />
-  <updated>2017-11-05T00:13:21Z</updated>
+  <updated>2017-11-05T00:14:22Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -31,7 +31,8 @@ in URLs. Yes, I don't like them either ...&lt;/p&gt;
 &lt;p&gt;I can imagine a class of use cases where such kind of escape characters may
 need to be handled: say, you'd like to annotate - in a local or remote document - a number of URLs, with a given substring (of the URL itself).&lt;/p&gt;
 &lt;p&gt;Let's look at the case where the cardinality of our URLs set is unity:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: url
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
+In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: url
 Out[&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/na%C3%AFve-bayes'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
