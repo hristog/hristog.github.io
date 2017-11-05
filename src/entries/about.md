@@ -38,7 +38,7 @@ Feel free to visit my GitHub [profile][github] for a sample of my programming ma
 [^football_skills]: For the curious among yourselves, I've recorded a sample of a little kickabout
 of mine with a mini-football. [Enjoy][football_video] :)
 
-# The definition of t~0~
+# The definition of t<sub>0</sub>
 It all started when I was 7 or 8 years old. It couldn't be distinguished from any other visit to my aunt's flat, yet nevertheless that particular one turned out to change my life. Forever.
 
 I found myself leafing through a random book on the BASIC programming language, intended for
