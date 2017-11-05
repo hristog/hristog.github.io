@@ -1,4 +1,6 @@
 
+# Overview
+
 Welcome to my blog, regardless of how randomly you've arrived here! Also, this web space
 doesn't discriminate between human beings and search-engine robots[^google_bot], so congrats for
 having joined the party (intendedly or not ;) )!
@@ -30,6 +32,30 @@ Feel free to visit my GitHub [profile][github] for a sample of my programming ma
 
 [^football_skills]: For the curious among yourselves, I've recorded a sample of a little kickabout
 of mine with a mini-football. [Enjoy][football_video] :)
+
+# The definition of t~0~
+It all started when I was 7 or 8 years old. It couldn't be distinguished from any other visit to my aunt's flat, yet nevertheless that particular one turned out to change my life. Forever.
+
+I found myself leafing through a random book on the BASIC programming language, intended for
+beginners. For the life of me, I can't remember it's title, but
+it was one of those typical BASIC books, where you're presented with a bunch of programs, spread
+over several pages, and if you'd want to interact in a bit more engaging way with them, you'd had to
+laboriously type up the code, character by character (and, yes - in the case of BASIC - line number
+by line number).
+
+A peculiar characteristic of that book was the it was greatly illustrated, and the bugs in the
+programs were represented as cartoons of computerised bugs. I couldn't stop devouring the pages, one
+after another - everything just clicked[^basic_for_beginners].
+
+That marked the beginning of my love affair with abstract representations, skyscrapers built upon
+layers of logic and the alluring notion of attempting to create artificial intelligence[^artificial_intelligence].
+
+[^basic_for_beginners]: Wait a minute, I never said it was a book on programming nuclear physics
+simulations with BASIC! It was your typical introductory book a-la "Here's how you do loops, and
+this is how you do conditional statements".
+
+[^artificial_intelligence]: I'm pretty sure I was not familiar of the exact term back then (to be fair, even nowadays, there doesn't seem to be a generally agreed-upon definition that best captures the notion yet), but I tended to daydream about building robots, and eventually my passion converged
+on focusing with their "brains".
 
 [recaptcha]: https://www.google.com/recaptcha/intro/
 [football]: /tagged/football

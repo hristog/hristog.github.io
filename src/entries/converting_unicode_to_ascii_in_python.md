@@ -5,6 +5,7 @@ tags:
   - python
   - python-v2
   - unicode
+  - text-processing
 ---
 
 # Python and Unicode

@@ -5,12 +5,80 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/unicode/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/unicode/atom.xml" />
-  <updated>2017-11-04T15:06:46Z</updated>
+  <updated>2017-11-05T00:05:00Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
   <rights type="html">&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</rights>
   <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>
+  
+  <entry>
+    <id>https://hristog.github.io/unquoting_url_escape_characters_using_python.html</id>
+    <author>
+      <name>Hristo</name>
+      <uri>https://hristog.github.io/</uri>
+    </author>
+    <title>Unquoting URL escape characters using Python</title>
+    <link rel="alternate" type="text/html" href="https://hristog.github.io/unquoting_url_escape_characters_using_python.html" />
+    <published>2017-11-05T00:00:00Z</published>
+    <updated>2017-11-05T00:00:00Z</updated>
+    <category term="python"/><category term="python-v2"/><category term="unicode"/><category term="text-processing"/>
+    
+
+    <content type="html">&lt;p&gt;&lt;h2 id=&quot;xx_escapes&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#xx_escapes&quot;&gt;&lt;code&gt;%xx&lt;/code&gt;-escapes&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Have you ever come across those strange looking &lt;code&gt;%xx&lt;/code&gt;-escapes, that are used
+in URLs. Yes, I don't like them either ...&lt;/p&gt;
+&lt;p&gt;I can imagine a class of use cases where such kind of escape characters may
+need to be handled: say, you'd like to annotate - in a local or remote document - a number of URLs, with a given substring (of the URL itself).&lt;/p&gt;
+&lt;p&gt;Let's look at the case where the cardinality of our URLs set is unity:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: url
+Out[&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/na%C3%AFve-bayes'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Since I don't suppose any of you would be particularly keen on annotating this URL with
+&lt;code&gt;na\xc3\xafve-bayes&lt;/code&gt;, we'll have to resort to utility functions provided by &lt;a href=&quot;https://docs.python.org/2/library/urllib2.html&quot;&gt;&lt;code&gt;urllib2&lt;/code&gt;&lt;/a&gt;&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;urllib2&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: urllib2&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;unquote(url)
+Out[&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xc3\xaf&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve-bayes'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ugh. We've suddenly time-travelled back to &lt;a href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html&quot;&gt;a few days ago&lt;/a&gt;!
+Luckily enough, our memories of the previous timeline branch have been preserved intact -
+we are empowered with the knowledge of the &lt;code&gt;unicodedata&lt;/code&gt; module:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: url &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; urllib2&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;unquote(url)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;decode(&lt;span style=&quot;color: #BB4444&quot;&gt;'utf8'&lt;/span&gt;)
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: url
+Out[&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'https://www.a-random-ml-website.com/na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xef&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve-bayes'&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;6&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;unicodedata&lt;/span&gt;
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;7&lt;/span&gt;]: better_looking_url &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; unicodedata&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;normalize(&lt;span style=&quot;color: #BB4444&quot;&gt;'NFKD'&lt;/span&gt;, url)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;encode(&lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'ignore'&lt;/span&gt;)
+
+In [&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: better_looking_url
+Out[&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/naive-bayes'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, you can slice and dice &lt;code&gt;better_looking_url&lt;/code&gt; as you please, for your annotation purposes.&lt;/p&gt;
+&lt;div class=&quot;footnote&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn:python_version&quot;&gt;
+&lt;p&gt;The Python version associated with the code examples from this post is &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fnref:python_version&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;hr /&gt;
+
+</content>
+
+  </entry>
   
   <entry>
     <id>https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html</id>
@@ -22,7 +90,7 @@
     <link rel="alternate" type="text/html" href="https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html" />
     <published>2017-10-28T23:00:00Z</published>
     <updated>2017-10-28T23:00:00Z</updated>
-    <category term="python"/><category term="python-v2"/><category term="unicode"/>
+    <category term="python"/><category term="python-v2"/><category term="unicode"/><category term="text-processing"/>
     
 
     <content type="html">&lt;p&gt;&lt;h2 id=&quot;python_and_unicode&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#python_and_unicode&quot;&gt;Python and Unicode&lt;/a&gt;&lt;/h2&gt;

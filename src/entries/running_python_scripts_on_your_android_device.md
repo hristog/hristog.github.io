@@ -11,7 +11,7 @@ tags:
 
 ![Termux: a terminal emulator for Android OS](/uploads/linux/termux.png "Termux: a terminal emulator for Android OS")
 
-I came across [Termux][termux] via a relatively recent mention on HackerNews. Can't remember which one it was exactly, but if you'd like to familiarize yourself with its particular design decisions,
+I came across [Termux][termux] via a relatively recent mention on HackerNews. Can't remember which one it was exactly, but if you'd like to familiarise yourself with its particular design decisions,
 advantages, disadvantages, features, etc., you might want to head over to HackerNews and give a quick skim over the following comment threads: [1][termux_hn_1], [2][termux_hn_2], [3][termux_hn_3], [4][termux_hn_4], [5][termux_hn_5].
 
 If you opted to do a Depth-First-Search of the above articles, then I may have already lost you as a reader already. If, however, you didn't get put off by my desperate attempts at humor, and somehow found your way back to this post, then welcome back. `else # i.e., you prefer synthesized content`, keep reading :).
