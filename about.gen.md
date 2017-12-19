@@ -40,8 +40,7 @@ I found myself leafing through a random book on the BASIC programming language, 
 beginners. For the life of me, I can't remember it's title, but
 it was one of those typical BASIC books, where you're presented with a bunch of programs, spread
 over several pages, and if you'd want to interact in a bit more engaging way with them, you'd had to
-laboriously type up the code, character by character (and, yes - in the case of BASIC - line number
-by line number).
+laboriously type up the code, character by character (and, yes - in the case of BASIC - along with line number, too).
 
 A peculiar characteristic of that book was the it was greatly illustrated, and the bugs in the
 programs were represented as cartoons of computerised bugs. I couldn't stop devouring the pages, one

