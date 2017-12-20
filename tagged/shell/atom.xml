@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/shell/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/shell/atom.xml" />
-  <updated>2017-12-19T22:15:56Z</updated>
+  <updated>2017-12-20T08:34:29Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -18,7 +18,7 @@
       <name>Hristo</name>
       <uri>https://hristog.github.io/</uri>
     </author>
-    <title>Getting yourself tangled in `git` branches</title>
+    <title>Getting yourself tangled in git branches</title>
     <link rel="alternate" type="text/html" href="https://hristog.github.io/getting_yourself_tangled_in_git_branches.html" />
     <published>2017-12-19T00:00:00Z</published>
     <updated>2017-12-19T00:00:00Z</updated>

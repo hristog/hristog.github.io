@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-12-19T22:15:55Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2017-12-20T08:34:29Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -20,7 +20,7 @@
       -->
       
       <item>
-        <title>Getting yourself tangled in `git` branches</title>
+        <title>Getting yourself tangled in git branches</title>
         <pubDate>2017-12-19T00:00:00Z</pubDate>
         <guid isPermaLink="false">https://hristog.github.io/getting_yourself_tangled_in_git_branches.html</guid>
         <link>https://hristog.github.io/getting_yourself_tangled_in_git_branches.html</link>
