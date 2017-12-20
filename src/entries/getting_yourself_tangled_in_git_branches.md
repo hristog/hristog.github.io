@@ -1,5 +1,5 @@
 ---
-title: Getting yourself tangled in `git` branches
+title: Getting yourself tangled in git branches
 publish_date: Dec 19th, 2017
 tags:
   - git
