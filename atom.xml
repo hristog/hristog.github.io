@@ -5,12 +5,66 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/atom.xml" />
-  <updated>2017-12-23T12:50:09Z</updated>
+  <updated>2017-12-23T18:36:08Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
   <rights type="html">&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</rights>
   <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>
+  
+  <entry>
+    <id>https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html</id>
+    <author>
+      <name>Hristo</name>
+      <uri>https://hristog.github.io/</uri>
+    </author>
+    <title>Ubuntu MATE 16.04.2 - Wi-Fi not available on Raspberry Pi 3?</title>
+    <link rel="alternate" type="text/html" href="https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html" />
+    <published>2017-12-23T00:00:00Z</published>
+    <updated>2017-12-23T00:00:00Z</updated>
+    <category term="linux"/><category term="shell-scripting"/><category term="raspberry-pi"/><category term="ubuntu"/>
+    
+
+    <content type="html">&lt;p&gt;&lt;h2 id=&quot;what_the_heck_is_ubuntu_mate&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html#what_the_heck_is_ubuntu_mate&quot;&gt;What the heck is Ubuntu MATE?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;From the &lt;a href=&quot;https://ubuntu-mate.org/what-is-ubuntu-mate/&quot;&gt;official website&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The MATE Desktop has a rich history and is the continuation of the GNOME2 desktop, which was the default desktop environment on many Linux and Unix operating systems for over a decade. This means that MATE Desktop is tried, tested and very reliable.&lt;/p&gt;
+&lt;p&gt;While MATE Desktop provides the essential user interfaces to control and use a computer, Ubuntu MATE adds a collection of additional applications to turn your computer into a truly powerful workstation.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This particular Ubuntu flavour actually provides ready-to-run image for the Raspberry Pi 2 and Raspberry Pi 3. Since I recently got one of the latter series, I decided to give the MATE a spin.&lt;/p&gt;
+&lt;p&gt;It turned out the excitement ended just about after the completion of installation process.&lt;/p&gt;
+&lt;p&gt;First of all, the operating system was running noticeably more slowly than the official OS supported by the Raspberry community, &lt;a href=&quot;https://www.raspberrypi.org/downloads/raspbian/&quot;&gt;Raspbian&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I'm appending Pi 3's specs for reference:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Quad Core 1.2GHz Broadcom BCM2837 64bit CPU&lt;/li&gt;
+&lt;li&gt;1GB RAM&lt;/li&gt;
+&lt;li&gt;BCM43438 wireless LAN and Bluetooth Low Energy (BLE) on board&lt;/li&gt;
+&lt;li&gt;40-pin extended GPIO&lt;/li&gt;
+&lt;li&gt;4 USB 2 ports&lt;/li&gt;
+&lt;li&gt;4 Pole stereo output and composite video port&lt;/li&gt;
+&lt;li&gt;Full size HDMI&lt;/li&gt;
+&lt;li&gt;CSI camera port for connecting a Raspberry Pi camera&lt;/li&gt;
+&lt;li&gt;DSI display port for connecting a Raspberry Pi touchscreen display&lt;/li&gt;
+&lt;li&gt;Micro SD port for loading your operating system and storing data&lt;/li&gt;
+&lt;li&gt;Upgraded switched Micro USB power source up to 2.5A&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;wi_fi_device_not_ready&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html#wi_fi_device_not_ready&quot;&gt;Wi-Fi device not ready?!?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Second, despite having had proper access to the Wi-Fi router during installation, MATE wasn't able to detect the device upon first boot. The solution? Fortunately, that was a simple one - the network manager service needed to be restarted:&lt;/p&gt;
+&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;sudo service network&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;manager restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nevertheless, that wasn't enough to keep MATE on my Raspberry Pi 3 SD card. If you don't trust me, go ahead and give it a try :)&lt;p&gt;&lt;/p&gt;
+
+
+
+&lt;hr /&gt;
+
+</content>
+
+  </entry>
   
   <entry>
     <id>https://hristog.github.io/getting_yourself_tangled_in_git_branches.html</id>
