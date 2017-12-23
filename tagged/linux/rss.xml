@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-12-20T08:34:29Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2017-12-23T12:47:19Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -25,7 +25,7 @@
         <guid isPermaLink="false">https://hristog.github.io/getting_yourself_tangled_in_git_branches.html</guid>
         <link>https://hristog.github.io/getting_yourself_tangled_in_git_branches.html</link>
         <description>
-          &lt;p&gt;&lt;h2 id=&quot;deleting_a_git_branch_what_could_really_go_wrong&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#deleting_a_git_branch_what_could_really_go_wrong&quot;&gt;Deleting a &lt;code&gt;git&lt;/code&gt; branch ... What could really go wrong :)&lt;/a&gt;&lt;/h2&gt;
+          &lt;p&gt;&lt;h2 id=&quot;deleting_a_git_branch_what_could_possibly_go_wrong&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#deleting_a_git_branch_what_could_possibly_go_wrong&quot;&gt;Deleting a &lt;code&gt;git&lt;/code&gt; branch ... What could possibly go wrong :)&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Have you ever deleted the &lt;code&gt;remote&lt;/code&gt; of the branch you've got checked out? And then deleted the corresponding
 local branch (that you've still got checked out)?&lt;/p&gt;
 &lt;p&gt;If you've answered with Yes to at least one of the one question above, then I encourage you to read further. Alternatively, you may still proceed at your own caution - might save you some troubles down the line :)&lt;/p&gt;
