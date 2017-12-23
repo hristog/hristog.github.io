@@ -7,7 +7,7 @@ tags:
   - shell
 ---
 
-# Deleting a `git` branch ... What could really go wrong :)
+# Deleting a `git` branch ... What could possibly go wrong :)
 
 Have you ever deleted the `remote` of the branch you've got checked out? And then deleted the corresponding
 local branch (that you've still got checked out)?
