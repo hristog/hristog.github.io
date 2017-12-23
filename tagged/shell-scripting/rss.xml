@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" version="2.0">
     <channel>
-      <title>Conscious Automaton - shell</title>
-      <link>https://hristog.github.io/tagged/shell/</link>
+      <title>Conscious Automaton - shell-scripting</title>
+      <link>https://hristog.github.io/tagged/shell-scripting/</link>
       <description>&gt;&gt;&gt; from hristog.thoughts import random</description>
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-12-23T12:47:19Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2017-12-23T12:50:09Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -51,7 +51,7 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
 
         <category>git</category>
         <category>linux</category>
-        <category>shell</category>
+        <category>shell-scripting</category>
         
       </item>
       
