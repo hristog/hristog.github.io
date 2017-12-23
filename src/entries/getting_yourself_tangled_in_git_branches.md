@@ -4,7 +4,7 @@ publish_date: Dec 19th, 2017
 tags:
   - git
   - linux
-  - shell
+  - shell-scripting
 ---
 
 # Deleting a `git` branch ... What could possibly go wrong :)
