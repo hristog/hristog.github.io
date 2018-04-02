@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-12-23T18:36:09Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2018-04-02T21:37:02Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -52,7 +52,7 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;wi_fi_device_not_ready&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html#wi_fi_device_not_ready&quot;&gt;Wi-Fi device not ready?!?&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Second, despite having had proper access to the Wi-Fi router during installation, MATE wasn't able to detect the device upon first boot. The solution? Fortunately, that was a simple one - the network manager service needed to be restarted:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;sudo service network&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;manager restart
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;sudo service network&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;manager restart
 &lt;/pre&gt;&lt;/div&gt;
 
 

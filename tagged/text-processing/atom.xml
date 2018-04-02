@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/text-processing/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/text-processing/atom.xml" />
-  <updated>2017-12-23T18:36:09Z</updated>
+  <updated>2018-04-02T21:37:02Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -31,15 +31,15 @@ in URLs. Yes, I don't like them either ...&lt;/p&gt;
 &lt;p&gt;I can imagine a class of use cases where such kind of escape characters may
 need to be handled: say, you'd like to annotate - in a local or remote document - a number of URLs, with a given substring (of the URL itself).&lt;/p&gt;
 &lt;p&gt;Let's look at the case where the cardinality of our URLs set is unity:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
 In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: url
 Out[&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/na%C3%AFve-bayes'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Since I don't suppose any of you would be particularly keen on annotating this URL with
-&lt;code&gt;na\xc3\xafve-bayes&lt;/code&gt;, we'll have to resort to utility functions provided by &lt;a href=&quot;https://docs.python.org/2/library/urllib2.html&quot;&gt;&lt;code&gt;urllib2&lt;/code&gt;&lt;/a&gt;&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;urllib2&lt;/span&gt;
+&lt;code&gt;na\xc3\xafve-bayes&lt;/code&gt;, we'll have to resort to utility functions provided by &lt;a href=&quot;https://docs.python.org/2/library/urllib2.html&quot;&gt;&lt;code&gt;urllib2&lt;/code&gt;&lt;/a&gt;&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;urllib2&lt;/span&gt;
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: urllib2&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;unquote(url)
 Out[&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'https://www.a-random-ml-website.com/na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xc3\xaf&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve-bayes'&lt;/span&gt;
@@ -49,7 +49,7 @@ Out[&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: &lt;span style
 &lt;p&gt;Ugh. We've suddenly time-travelled back to &lt;a href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html&quot;&gt;a few days ago&lt;/a&gt;!
 Luckily enough, our memories of the previous timeline branch have been preserved intact -
 we are empowered with the knowledge of the &lt;code&gt;unicodedata&lt;/code&gt; module:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: url &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; urllib2&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;unquote(url)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;decode(&lt;span style=&quot;color: #BB4444&quot;&gt;'utf8'&lt;/span&gt;)
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: url &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; urllib2&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;unquote(url)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;decode(&lt;span style=&quot;color: #BB4444&quot;&gt;'utf8'&lt;/span&gt;)
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: url
 Out[&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'https://www.a-random-ml-website.com/na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xef&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve-bayes'&lt;/span&gt;
@@ -68,7 +68,7 @@ Out[&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn:python_version&quot;&gt;
-&lt;p&gt;The Python version associated with the code examples from this post is &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fnref:python_version&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Python version associated with the code examples from this post is &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/unquoting_url_escape_characters_using_python.html#fnref:python_version&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
@@ -98,20 +98,20 @@ Out[&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style
 &lt;p&gt;Oh, my - If I had a nickel/five-pence every time I had to deal with various kinds
 of Unicode-related processing in Python ...&lt;/p&gt;
 &lt;p&gt;Anyway, this brief note is for those of you who've ever run into a not-so-helpful error message, along the lines of the following:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;: &lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt; codec can&lt;span style=&quot;color: #BB4444&quot;&gt;'t encode character u'&lt;/span&gt;\xef&lt;span style=&quot;color: #BB4444&quot;&gt;' in position 2: ordinal not in range(128)&lt;/span&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;: &lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt; codec can&lt;span style=&quot;color: #BB4444&quot;&gt;'t encode character u'&lt;/span&gt;\xef&lt;span style=&quot;color: #BB4444&quot;&gt;' in position 2: ordinal not in range(128)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I'd bet those of you who have used Python for a bit larger than trivial project have invariably &lt;a href=&quot;https://duckduckgo.com/?q=Python+UnicodeEncodeError&quot;&gt;encountered&lt;/a&gt;
 some variety of it.&lt;/p&gt;
-&lt;p&gt;Let's see how we could approach this issue&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in different ways. For this purse, I'll first go
+&lt;p&gt;Let's see how we could approach this issue&lt;sup id=&quot;fnref:python_version&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fn:python_version&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in different ways. For this purse, I'll first go
 ahead and  define a
 simple use-case: we're experimenting with a given dataset and we want to run a number of
 Machine Learning methods against the dataset and output a nice log file with performance
 summary and results for each method.&lt;/p&gt;
 &lt;p&gt;As it turns out, not all ML method names were created equal, and for some of them
 we need more characters than those defined in the basic ASCII table:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008800; font-style: italic&quot;&gt;# Python 2.7.12&lt;/span&gt;
 In [&lt;span style=&quot;color: #666666&quot;&gt;1&lt;/span&gt;]: method &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'Naïve Bayes'&lt;/span&gt;
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: method
@@ -122,7 +122,7 @@ Out[&lt;span style=&quot;color: #666666&quot;&gt;2&lt;/span&gt;]: &lt;span style
 &lt;p&gt;So far so good - Python has successfully been able to encode our special character
 &lt;code&gt;ï&lt;/code&gt; as &lt;code&gt;\xef&lt;/code&gt;. However, once we attempt to put that into a non-unicode string, all hell
 breaks loose:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;3&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
 &lt;span style=&quot;color: #666666&quot;&gt;---------------------------------------------------------------------------&lt;/span&gt;
 &lt;span style=&quot;color: #D2413A; font-weight: bold&quot;&gt;UnicodeEncodeError&lt;/span&gt;                        Traceback (most recent call last)
 &lt;span style=&quot;color: #666666&quot;&gt;&amp;lt;&lt;/span&gt;ipython&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #AA22FF&quot;&gt;input&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;-31-&lt;/span&gt;c5a4e402b551&lt;span style=&quot;color: #666666&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;in&lt;/span&gt; &lt;span style=&quot;color: #666666&quot;&gt;&amp;lt;&lt;/span&gt;module&lt;span style=&quot;color: #666666&quot;&gt;&amp;gt;&lt;/span&gt;()
@@ -135,7 +135,7 @@ breaks loose:&lt;/p&gt;
 &lt;p&gt;At this point, we have a couple of options: ignore-and-remove the problematic character or
 try to somehow convert it to an approximate representation that is part of the
 ASCII character set. Let's explore the former option first:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;encode(&lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'ignore'&lt;/span&gt;))
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;)&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;encode(&lt;span style=&quot;color: #BB4444&quot;&gt;'ascii'&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'ignore'&lt;/span&gt;))
 Out[&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;'Nave_Bayes_method.log'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -144,7 +144,7 @@ Out[&lt;span style=&quot;color: #666666&quot;&gt;4&lt;/span&gt;]: &lt;span style
 right?&lt;/p&gt;
 &lt;p&gt;Alternatively, if we're happy with non-ASCII file names occupying our file system, we
 could just do:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;5&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;u'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(method&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;replace(&lt;span style=&quot;color: #BB4444&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #BB4444&quot;&gt;'_'&lt;/span&gt;))
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;6&lt;/span&gt;]: method_filename
 Out[&lt;span style=&quot;color: #666666&quot;&gt;6&lt;/span&gt;]: &lt;span style=&quot;color: #BB4444&quot;&gt;u'Na&lt;/span&gt;&lt;span style=&quot;color: #BB6622; font-weight: bold&quot;&gt;\xc3\xaf&lt;/span&gt;&lt;span style=&quot;color: #BB4444&quot;&gt;ve_Bayes_method.log'&lt;/span&gt;
@@ -155,7 +155,7 @@ Na&lt;span style=&quot;border: 1px solid #FF0000&quot;&gt;ï&lt;/span&gt;ve_Baye
 
 
 &lt;p&gt;However, that's not really the point of this exercise. Let's see if we could do even better.&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;unicodedata&lt;/span&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;In [&lt;span style=&quot;color: #666666&quot;&gt;8&lt;/span&gt;]: &lt;span style=&quot;color: #AA22FF; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;unicodedata&lt;/span&gt;
 
 In [&lt;span style=&quot;color: #666666&quot;&gt;9&lt;/span&gt;]: method_filename &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #BB4444&quot;&gt;'{}_method.log'&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;format(
             unicodedata&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;normalize(
@@ -185,7 +185,7 @@ learned about the &lt;code&gt;unicodedata.normalize&lt;/code&gt; functionality t
 &lt;p&gt;Please, note that the code examples accompanying this post are
 relevant to Python v2 - which has been labeled as &quot;Legacy Python&quot;, in the context of
 the official community discontinuing its support in 2020 - and,
-particularly, &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fnref:python_version&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+particularly, &lt;code&gt;Python 2.7.12&lt;/code&gt;. &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/converting_unicode_representations_to_ascii_in_python.html#fnref:python_version&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;

@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/tv-series/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/tv-series/atom.xml" />
-  <updated>2017-12-23T18:36:09Z</updated>
+  <updated>2018-04-02T21:37:02Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -32,10 +32,10 @@ transcripts of all episodes from all seasons of one of my favorite TV series,
 &lt;p&gt;&lt;img src=&quot;https://hristog.github.io/uploads/friends_logo.png&quot; alt=&quot;Friends TV Series&quot; title=&quot;Friends TV Series&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;dataset&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#dataset&quot;&gt;Dataset&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The aforementioned dataset, consists of transcripts, spread across
-a nested structure of seasons&lt;sup id=&quot;fnref:s2_formatting&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:s2_formatting&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, episodes, and scenes. Each scene, naturally,
+a nested structure of seasons&lt;sup id=&quot;fnref:s2_formatting&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:s2_formatting&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, episodes, and scenes. Each scene, naturally,
 contains a sequence of lines, by characters predominantly addressing each
 other. For examples, here's a simplified example of a scene:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;[Scene: A Park, Alice and Bob are having a picnic.]
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;[Scene: A Park, Alice and Bob are having a picnic.]
 Alice: We're quite lucky with the weather today, aren't we?
 Bob: Indeed, we are.
 &lt;/pre&gt;&lt;/div&gt;
@@ -43,7 +43,7 @@ Bob: Indeed, we are.
 
 &lt;h2 id=&quot;methodology&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#methodology&quot;&gt;Methodology&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The focus of this study is to investigate two proxies of character importances,
-namely, total number of lines alloted, and sum of the lengths&lt;sup id=&quot;fnref:line_length&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:line_length&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; of
+namely, total number of lines alloted, and sum of the lengths&lt;sup id=&quot;fnref:line_length&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:line_length&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; of
 all lines alloted, for each individual season.&lt;/p&gt;
 &lt;p&gt;Of course, given the raw nature of the unprocessed data, the aforementioned metrics
 are only approximations. Nevertheless their degree of significance is strong enough
@@ -56,13 +56,13 @@ for the purposes and scope of this study.&lt;/p&gt;
 &lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/Friends_line_length_all.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/Friends_line_length_all_150x256.png&quot; alt=&quot;Total line length for all characters&quot; /&gt;&lt;/a&gt;
 &lt;a target=&quot;_blank&quot; href=&quot;https://hristog.github.io/uploads/Friends_line_length_supp.png&quot;&gt;&lt;img src=&quot;https://hristog.github.io/uploads/Friends_line_length_supp_148x256.png&quot; alt=&quot;Total line length with focus on supporting characters&quot; /&gt;&lt;/a&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;We can clearly observe well-formed&lt;sup id=&quot;fnref:pair_formation&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:pair_formation&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; pairs of characters&lt;sup id=&quot;fnref:char_pairs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:char_pairs&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, by as early as the end of the fourth season: &lt;a href=&quot;http://friends.wikia.com/wiki/Ross_and_Rachel&quot;&gt;Ross and Rachel&lt;/a&gt;, &lt;a href=&quot;http://friends.wikia.com/wiki/Monica_and_Chandler&quot;&gt;Monica and Chandler&lt;/a&gt;, and &lt;a href=&quot;http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.&quot;&gt;Joey&lt;/a&gt; and &lt;a href=&quot;http://friends.wikia.com/wiki/Phoebe_Buffay&quot;&gt;Phoebe&lt;/a&gt;; the total line length graphs reveal a further pair, formed by &lt;a href=&quot;http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment&quot;&gt;Joey and Chandler&lt;/a&gt;&lt;sup id=&quot;fnref:jman_channie&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:jman_channie&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, which is not clear enough given only the context of the screen-time
+&lt;p&gt;We can clearly observe well-formed&lt;sup id=&quot;fnref:pair_formation&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:pair_formation&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; pairs of characters&lt;sup id=&quot;fnref:char_pairs&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:char_pairs&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;, by as early as the end of the fourth season: &lt;a href=&quot;http://friends.wikia.com/wiki/Ross_and_Rachel&quot;&gt;Ross and Rachel&lt;/a&gt;, &lt;a href=&quot;http://friends.wikia.com/wiki/Monica_and_Chandler&quot;&gt;Monica and Chandler&lt;/a&gt;, and &lt;a href=&quot;http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.&quot;&gt;Joey&lt;/a&gt; and &lt;a href=&quot;http://friends.wikia.com/wiki/Phoebe_Buffay&quot;&gt;Phoebe&lt;/a&gt;; the total line length graphs reveal a further pair, formed by &lt;a href=&quot;http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment&quot;&gt;Joey and Chandler&lt;/a&gt;&lt;sup id=&quot;fnref:jman_channie&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:jman_channie&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, which is not clear enough given only the context of the screen-time
 analysis, though.&lt;/p&gt;
 &lt;p&gt;Since the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_5_.281999.E2.80.9300.29&quot;&gt;beginning of the fifth season&lt;/a&gt;, however, when a significant
 event takes place in the personal life of one of the leading cast members, we see a
 dramatic reshuffling of the &quot;leaderboard&quot;. In particular, the beginning of the
-season in question, approximately overlaps with the beginning of Jennifer Aniston's &lt;a href=&quot;https://en.wikipedia.org/wiki/Jennifer_Aniston#Relationships&quot;&gt;relationship&lt;/a&gt; with Brad Pitt&lt;sup id=&quot;fnref:will_colbert&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:will_colbert&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;, eventually leading to their marriage, immediately after the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_6_.281999.E2.80.9300.29&quot;&gt;end of season six&lt;/a&gt; (around halfway through 2000).&lt;/p&gt;
-&lt;p&gt;To put it mildly, as a result&lt;sup id=&quot;fnref:ja_correlation&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:ja_correlation&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;, the total amount of screen time&lt;sup id=&quot;fnref:screen_time_proxies&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:screen_time_proxies&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;
+season in question, approximately overlaps with the beginning of Jennifer Aniston's &lt;a href=&quot;https://en.wikipedia.org/wiki/Jennifer_Aniston#Relationships&quot;&gt;relationship&lt;/a&gt; with Brad Pitt&lt;sup id=&quot;fnref:will_colbert&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:will_colbert&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;, eventually leading to their marriage, immediately after the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_6_.281999.E2.80.9300.29&quot;&gt;end of season six&lt;/a&gt; (around halfway through 2000).&lt;/p&gt;
+&lt;p&gt;To put it mildly, as a result&lt;sup id=&quot;fnref:ja_correlation&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:ja_correlation&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;, the total amount of screen time&lt;sup id=&quot;fnref:screen_time_proxies&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fn:screen_time_proxies&quot;&gt;8&lt;/a&gt;&lt;/sup&gt;
 alloted to Aniston's character, Rachel, skyrockets for seasons 7 and 8.&lt;/p&gt;
 &lt;p&gt;Another dramatic anomaly observed in the graphs is the significantly reduced
 season eight screen time, alloted to Chandler (portrayed by the wonderful Matthew Perry). A quick reference check on &lt;a href=&quot;https://en.wikipedia.org/wiki/Matthew_Perry#Personal_life&quot;&gt;what was going on&lt;/a&gt; in the actor's life around that time, reveals that he had been battling with opioid
@@ -78,7 +78,7 @@ support the various implementation-design decisions, and provide minimally suffi
 &lt;li id=&quot;fn:s2_formatting&quot;&gt;
 &lt;p&gt;Due to poorly-formatted raw data for the second season, for the
 purposes of this study the corresponding episodes were excluded from the analysis.
-Nevertheless, I plan to customize my script further, in order to be able to subsequently include the missing data. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:s2_formatting&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+Nevertheless, I plan to customize my script further, in order to be able to subsequently include the missing data. &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:s2_formatting&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:line_length&quot;&gt;
 &lt;p&gt;While, line length can be viewed as a form of a proxy for total
@@ -88,35 +88,35 @@ For completeness, line length is defined as the total number of characters -
 including punctuation (which is assumed to account for additional screen time) -
 comprising a given character line. And line, itself, is defined as a contiguous
 array of sentences, alloted to a a set of characters (usually, a single
-character). &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:line_length&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+character). &lt;a title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:line_length&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:pair_formation&quot;&gt;
 &lt;p&gt;The notion of a pair here, however, is relatively vague, given
 the quintessentially fluent nature of interactions taking place within the context
-of a sitcom environment. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:pair_formation&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+of a sitcom environment. &lt;a title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:pair_formation&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:char_pairs&quot;&gt;
 &lt;p&gt;Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of ranking, based on character importance or reputation, corresponding the particular period of
-the timeline of the TV series. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 4 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:char_pairs&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+the timeline of the TV series. &lt;a title=&quot;Jump back to footnote 4 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:char_pairs&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:jman_channie&quot;&gt;
 &lt;p&gt;At this point, the average die-hard fan of the show is probably reminded of quintessential moments like Joey's &lt;em&gt;&quot;No more J-man and Channie's&quot;&lt;/em&gt;
-&lt;a href=&quot;http://friends.wikia.com/wiki/The_One_Where_Ross_Hugs_Rachel&quot;&gt;line&lt;/a&gt;, after Chandler informed Joey he'd been moving out to live together with Monica. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 5 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:jman_channie&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;http://friends.wikia.com/wiki/The_One_Where_Ross_Hugs_Rachel&quot;&gt;line&lt;/a&gt;, after Chandler informed Joey he'd been moving out to live together with Monica. &lt;a title=&quot;Jump back to footnote 5 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:jman_channie&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:will_colbert&quot;&gt;
 &lt;p&gt;Traditionally, just as the other various celebrities who were
 &lt;a href=&quot;http://friends.wikia.com/wiki/Relationships&quot;&gt;partners of cast members&lt;/a&gt; at one point or another, Brad Pitt eventually &lt;a href=&quot;http://friends.wikia.com/wiki/The_One_With_The_Rumor&quot;&gt;made an appearance&lt;/a&gt; on the show,
-portraying Will Colbert, who was presented as a former high school mate of Ross, Monica and Rachel. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 6 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:will_colbert&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+portraying Will Colbert, who was presented as a former high school mate of Ross, Monica and Rachel. &lt;a title=&quot;Jump back to footnote 6 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:will_colbert&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:ja_correlation&quot;&gt;
 &lt;p&gt;Naturally, this is only a correlation outlined by the data.
 This study does not mean or intend, in any way whatsoever, to underestimate
 Jennifer Aniston's acting skills or visual characteristics (or any other factor
-that might have contributed to her amazing success, for that matter). &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 7 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:ja_correlation&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+that might have contributed to her amazing success, for that matter). &lt;a title=&quot;Jump back to footnote 7 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:ja_correlation&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:screen_time_proxies&quot;&gt;
 &lt;p&gt;As estimated via the total number of lines, as well as
-the cousin statistic, total line length. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 8 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:screen_time_proxies&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+the cousin statistic, total line length. &lt;a title=&quot;Jump back to footnote 8 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/screen_time_analysis_of_friends_transcripts.html#fnref:screen_time_proxies&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;

