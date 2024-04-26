@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StrTools - Documentation</title>
+    <!-- <meta name="description" content="TODO populate this based on the module's description"> -->
+    <meta name="viewport" content="width=device-width">
+    <base href="/roc-tools/">
+    <script type="text/javascript" src="search.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/roc-tools/favicon.svg">
+    <!-- Safari ignores rel="icon" and only respects rel="mask-icon". It will render the SVG with
+    fill="#000" unless this `color` attribute here is hardcoded (not a CSS `var()`) to override it.
+  -->
+    <link rel="mask-icon" href="/roc-tools/favicon.svg" color="#7d59dd">
+    <link rel="prefetch" href="FuncTools"/>
+    <link rel="prefetch" href="ListTools"/>
+    <link rel="prefetch" href="NumTools"/>
+    <link rel="prefetch" href="StrTools"/>
+</head>
+
+<body>
+    <nav id="sidebar-nav">
+        <input id="module-search" aria-labelledby="search-link" type="text" placeholder="Search" />
+        <label for="module-search" id="search-link"><span id="search-link-text">Search</span> <span
+                id="search-link-hint">(press <span id="search-shortcut-key">s</span>)</span></label>
+        <div class="module-links">
+            <div class="sidebar-entry" ><a class="sidebar-module-link" href="FuncTools" >FuncTools</a><div class="sidebar-sub-entries" ><a href="FuncTools#compose" >compose</a><a href="FuncTools#compose2With2" >compose2With2</a><a href="FuncTools#compose2With3" >compose2With3</a><a href="FuncTools#compose2With4" >compose2With4</a><a href="FuncTools#compose2With5" >compose2With5</a><a href="FuncTools#compose3With2" >compose3With2</a><a href="FuncTools#compose3With3" >compose3With3</a><a href="FuncTools#compose3With4" >compose3With4</a><a href="FuncTools#compose3With5" >compose3With5</a><a href="FuncTools#flip2" >flip2</a><a href="FuncTools#flip3" >flip3</a><a href="FuncTools#flip4" >flip4</a><a href="FuncTools#flip5" >flip5</a><a href="FuncTools#partial2Takes1" >partial2Takes1</a><a href="FuncTools#partial2Takes1Backwards" >partial2Takes1Backwards</a><a href="FuncTools#partial3Takes1" >partial3Takes1</a><a href="FuncTools#partial3Takes1Backwards" >partial3Takes1Backwards</a><a href="FuncTools#partial3Takes2" >partial3Takes2</a><a href="FuncTools#partial3Takes2Backwards" >partial3Takes2Backwards</a><a href="FuncTools#partial4Takes1" >partial4Takes1</a><a href="FuncTools#partial4Takes2" >partial4Takes2</a><a href="FuncTools#partial4Takes3" >partial4Takes3</a><a href="FuncTools#partial5Takes1" >partial5Takes1</a><a href="FuncTools#partial5Takes2" >partial5Takes2</a><a href="FuncTools#partial5Takes3" >partial5Takes3</a><a href="FuncTools#partial5Takes4" >partial5Takes4</a><a href="FuncTools#curry2" >curry2</a><a href="FuncTools#curry2Backwards" >curry2Backwards</a><a href="FuncTools#curry3" >curry3</a><a href="FuncTools#curry3Backwards" >curry3Backwards</a><a href="FuncTools#curry4" >curry4</a><a href="FuncTools#curry4Backwards" >curry4Backwards</a><a href="FuncTools#curry5" >curry5</a><a href="FuncTools#curry5Backwards" >curry5Backwards</a></div></div><div class="sidebar-entry" ><a class="sidebar-module-link" href="ListTools" >ListTools</a><div class="sidebar-sub-entries" ><a href="ListTools#cartesianProduct" >cartesianProduct</a><a href="ListTools#cartesianProduct2" >cartesianProduct2</a><a href="ListTools#combinations2" >combinations2</a><a href="ListTools#count" >count</a><a href="ListTools#enumerate" >enumerate</a><a href="ListTools#enumerateStartAt" >enumerateStartAt</a><a href="ListTools#headTail" >headTail</a><a href="ListTools#map5" >map5</a><a href="ListTools#max" >max</a><a href="ListTools#maxIndex" >maxIndex</a><a href="ListTools#maxWithDefault" >maxWithDefault</a><a href="ListTools#maxIndexWithDefault" >maxIndexWithDefault</a><a href="ListTools#maxWithKey" >maxWithKey</a><a href="ListTools#mode" >mode</a><a href="ListTools#slice" >slice</a><a href="ListTools#splitAt" >splitAt</a><a href="ListTools#zip" >zip</a><a href="ListTools#zip2" >zip2</a><a href="ListTools#zip3" >zip3</a><a href="ListTools#zip4" >zip4</a><a href="ListTools#zip5" >zip5</a></div></div><div class="sidebar-entry" ><a class="sidebar-module-link" href="NumTools" >NumTools</a><div class="sidebar-sub-entries" ><a href="NumTools#divMod" >divMod</a><a href="NumTools#square" >square</a><a href="NumTools#exp" >exp</a><a href="NumTools#nthRoot" >nthRoot</a></div></div><div class="sidebar-entry" ><a class="sidebar-module-link" href="StrTools" >StrTools</a><div class="sidebar-sub-entries" ><a href="StrTools#cmpU8Based" >cmpU8Based</a><a href="StrTools#formatFWithTrailingZerosMaybeTrim" >formatFWithTrailingZerosMaybeTrim</a></div></div>
+        </div>
+    </nav>
+    <div class="top-header-extension">
+        <!-- if the window gets big, this extends the purple bar on the top header to the left edge of the window -->
+    </div>
+    <header class="top-header">
+        <div class="pkg-and-logo">
+            <a class="logo" href="/roc-tools/" aria-labelledby="logo-link">
+                <svg viewBox="0 -6 51 58" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="logo-link"
+                    role="img">
+                    <title id="logo-link">Return to Roc packages</title>
+                    <polygon role="presentation"
+                        points="0,0 23.8834,3.21052 37.2438,19.0101 45.9665,16.6324 50.5,22 45,22 44.0315,26.3689 26.4673,39.3424 27.4527,45.2132 17.655,53 23.6751,22.7086" />
+                </svg>
+            </a>
+            <h1 class="pkg-full-name" ><a href="/roc-tools/" >Documentation</a></h1>
+        </div>
+        <div class="top-header-triangle">
+            <!-- if the window gets big, this extends the purple bar on the top header to the left edge of the window -->
+        </div>
+    </header>
+    <main>
+        <h2 class="module-name" ><a href="/roc-tools/" >StrTools</a></h2><section><h3 id="cmpU8Based" class="entry-name" ><a href="StrTools#cmpU8Based" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor"><!--!
+	Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License -
+	https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+	Copyright 2023 Fonticons, Inc. -->
+	<path
+		d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z" />
+</svg></a><strong>cmpU8Based</strong> : 
+    Str, 
+    Str
+    -> 
+        [
+            LT,
+            EQ,
+            GT
+        ]</h3></section><section><h3 id="formatFWithTrailingZerosMaybeTrim" class="entry-name" ><a href="StrTools#formatFWithTrailingZerosMaybeTrim" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor"><!--!
+	Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License -
+	https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+	Copyright 2023 Fonticons, Inc. -->
+	<path
+		d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z" />
+</svg></a><strong>formatFWithTrailingZerosMaybeTrim</strong> : Num (FloatingPoint *), U64 -> Str</h3></section>
+    </main>
+    <footer>
+        <p>Made by people who like to make nice things.</p>
+    </footer>
+</body>
+
+</html>
